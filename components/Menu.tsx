@@ -1,6 +1,6 @@
 import styles from "../styles/Menu.module.scss"
 import Image from 'next/image'
-import Logo from "../icons/Logo.png"
+import Logo from "../icons/logo.svg"
 
 type Link = {
     id: number;
