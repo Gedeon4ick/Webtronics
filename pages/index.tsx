@@ -7,6 +7,7 @@ import Titul from '../components/Titul'
 import About from '../components/About';
 import Techno from '../components/Techno'
 import Steps from "../components/Steps";
+import Asked from "../components/Asked";
 const inter = Inter({ subsets: ['latin'] })
 
 
@@ -28,6 +29,7 @@ export default function Home({home}: InferGetStaticPropsType<typeof getStaticPro
               <About mentors={mentors}/>
               <Techno/>
               <Steps steps={steps}/>
+              <Asked/>
             </div>
           </header>
    </>
