@@ -9,7 +9,8 @@ const inter = Inter({ subsets: ['latin'] })
 
 
 export default function Home({home}: InferGetStaticPropsType<typeof getStaticProps>) {
-  const {menu} = home  
+  const {menu, mentors} = home  
+  
   return (
    <> 
       <Head>
@@ -22,8 +23,7 @@ export default function Home({home}: InferGetStaticPropsType<typeof getStaticPro
                 <Menu links={menu}/>
               </nav>
               <Titul/>
-              <About/>
-
+              <About mentors={mentors}/>
             </div>
           </header>
    </>

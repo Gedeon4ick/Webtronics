@@ -40,7 +40,26 @@
         "name": "Get in touch",
         "href": "#"
       }
+    ],
+    "mentors": [
+      {
+        "id": 1,
+        "name": "Wade Warren",
+        "descr": "Front-end engineers work closely with designers",
+        "img": "wade"
+      },
+      {
+        "id": 2,
+        "name": "Kristin Watson",
+        "descr": "Front-end engineers work closely with designers",
+        "img":  "kris"
+      },
+      {
+        "id": 3,
+        "name": "Robert Fox",
+        "descr": "Front-end engineers work closely with designers",
+        "img":  "robert"
+      }
     ]
   } 
-  
 }
