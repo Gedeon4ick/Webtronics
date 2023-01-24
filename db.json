@@ -60,6 +60,38 @@
         "descr": "Front-end engineers work closely with designers",
         "img":  "robert"
       }
+    ],
+    "steps": [
+      {
+        "id": 1,
+        "title": "Introduction to Front-End",
+        "descr": "Lorem ipsum dolor sit amet consectetur. Elit massa erat vitae non semper quis. "
+      },
+      {
+        "id": 2,
+        "title": "Overview of Development",
+        "descr": "Lorem ipsum dolor sit amet consectetur. Elit massa erat vitae non semper quis. "
+      },
+      {
+        "id": 3,
+        "title": "Introduction to Front-End",
+        "descr": "Lorem ipsum dolor sit amet consectetur. Elit massa erat vitae non semper quis. "
+      },
+      {
+        "id": 4,
+        "title": "Overview of Development",
+        "descr": "Lorem ipsum dolor sit amet consectetur. Elit massa erat vitae non semper quis. "
+      },
+      {
+        "id": 5,
+        "title": "Introduction to Front-End",
+        "descr": "Lorem ipsum dolor sit amet consectetur. Elit massa erat vitae non semper quis. "
+      },
+      {
+        "id": 6,
+        "title": "Overview of Development",
+        "descr": "Lorem ipsum dolor sit amet consectetur. Elit massa erat vitae non semper quis. "
+      }
     ]
   } 
 }

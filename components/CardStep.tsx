@@ -1,19 +1,30 @@
 import styles from '../styles/Steps.module.scss'
 
-const CardStep = () => {
+interface Props {
+    style: object,
+    step: {
+        id: number,
+        title: string,
+        descr: string
+    }
+}
+
+
+const CardStep = ({style, step}:Props):JSX.Element => {
+    const {id, title, descr} = step
     return (
-        <div className={styles.next}>
-            <div className={styles.wrapper}>
-            <div className="title">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, amet minus at reprehenderit vero, atque modi maiores iure molestias repudiandae sed libero mollitia neque enim, voluptas sunt. Unde, illo accusantium.
+        <div style={style} className={styles.next}>
+            <div  className={styles.card}>
+                <div className={styles.title}>
+                    Step {id}
+                </div>
+                <div className={styles.subtitle}>
+                    {title}
+                </div>
+                <div className={styles.descr}>
+                    {descr}
+                </div>
             </div>
-            <div className="subtitile">
-
-            </div>
-            <div className="descr">
-
-            </div>
-        </div>
         </div>
         
     );

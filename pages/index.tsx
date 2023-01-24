@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 
 export default function Home({home}: InferGetStaticPropsType<typeof getStaticProps>) {
-  const {menu, mentors} = home  
+  const {menu, mentors, steps} = home  
   
   return (
    <> 
@@ -27,7 +27,7 @@ export default function Home({home}: InferGetStaticPropsType<typeof getStaticPro
               <Titul/>
               <About mentors={mentors}/>
               <Techno/>
-              <Steps/>
+              <Steps steps={steps}/>
             </div>
           </header>
    </>
