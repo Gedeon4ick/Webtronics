@@ -4,7 +4,9 @@ import { Inter } from '@next/font/google'
 import Menu from '../components/Menu'
 import styles from '../styles/Home.module.scss'
 import Titul from '../components/Titul'
-import About from "../components/About";
+import About from '../components/About';
+import Techno from '../components/Techno'
+import Steps from "../components/Steps";
 const inter = Inter({ subsets: ['latin'] })
 
 
@@ -24,6 +26,8 @@ export default function Home({home}: InferGetStaticPropsType<typeof getStaticPro
               </nav>
               <Titul/>
               <About mentors={mentors}/>
+              <Techno/>
+              <Steps/>
             </div>
           </header>
    </>
