@@ -1,5 +1,5 @@
-import styles from '../styles/Titul.module.scss'
-import Button from './Button';
+import styles from './Titul.module.scss'
+import Button from '../Button/Button';
 
 const Titul = () => {
     return (

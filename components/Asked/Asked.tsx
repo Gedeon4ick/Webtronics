@@ -1,6 +1,6 @@
-import TitleH2 from "./TitleH2";
-import styles from '../styles/Asked.module.scss'
-import AccordionItem from '../components/AccordionItem'
+import TitleH2 from "../TitleH2/TitleH2";
+import styles from '../../components/Asked/Ascked.module.scss'
+import AccordionItem from '../AccordionItem/AccordionItem'
 
 const Asked = () => {
     return (

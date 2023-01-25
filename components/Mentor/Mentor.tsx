@@ -1,4 +1,4 @@
-import styles from '../styles/About.module.scss'
+import styles from './Mentor.module.scss'
 import Image from 'next/image'
 
 interface Props {

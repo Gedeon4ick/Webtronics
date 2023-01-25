@@ -1,10 +1,10 @@
-import TitleH2 from './TitleH2';
-import styles from '../styles/Techno.module.scss'
-import CardTechno from './CardTechno';
-import angular from '../img/angular.svg';
-import react from '../img/react.svg'
-import vue from '../img/vue.svg'
-import js from '../img/js.svg'
+import TitleH2 from '../TitleH2/TitleH2';
+import styles from './Techno.module.scss'
+import CardTechno from '../CardTechno/CardTechno';
+import angular from '../../img/angular.svg';
+import react from '../../img/react.svg'
+import vue from '../../img/vue.svg'
+import js from '../../img/js.svg'
 
 
 const Techno = () => {

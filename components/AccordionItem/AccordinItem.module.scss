@@ -1,0 +1,13 @@
+.item {
+    max-width: 703px;
+    background: linear-gradient(152.14deg, rgba(21, 191, 253, 0.7) 9.96%, rgba(156, 55, 253, 0.7) 100%);
+    clip-path: polygon(40px 0, 100% 0,100% calc(100% - 40px), calc(100% - 40px) 100%,0 100%,0 40px);
+    padding: 3px;
+    .content {
+        // height: 100px;
+        padding: 10px 30px;
+        clip-path: polygon(40px 0, 100% 0,100% calc(100% - 40px), calc(100% - 40px) 100%,0 100%,0 40px); 
+        background:  #151936;
+    }
+}
+

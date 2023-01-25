@@ -1,9 +1,9 @@
-import styles from '../styles/About.module.scss'
-import Mentor from './Mentor';
-import TitleH2 from './TitleH2';
-import wade from '../img/wade.svg';
-import kris from '../img/kris.svg';
-import robert from '../img/robert.svg';
+import styles from './About.module.scss'
+import Mentor from '../Mentor/Mentor';
+import TitleH2 from '../TitleH2/TitleH2';
+import wade from '../../img/wade.svg';
+import kris from '../../img/kris.svg';
+import robert from '../../img/robert.svg';
 
 interface Props {
     mentors: {

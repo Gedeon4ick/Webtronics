@@ -1,4 +1,4 @@
-import styles from '../styles/TitleH2.module.scss'
+import styles from './TitleH2.module.scss'
 
 interface Props {
     title: string;

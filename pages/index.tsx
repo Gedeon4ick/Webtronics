@@ -1,14 +1,12 @@
 import { GetStaticProps, InferGetStaticPropsType  } from "next";
 import Head from 'next/head'
-import { Inter } from '@next/font/google'
-import Menu from '../components/Menu'
-import styles from '../styles/Home.module.scss'
-import Titul from '../components/Titul'
-import About from '../components/About';
-import Techno from '../components/Techno'
-import Steps from "../components/Steps";
-import Asked from "../components/Asked";
-const inter = Inter({ subsets: ['latin'] })
+import Menu from '../components/Menu/Menu'
+import styles from '../components/Menu/Menu.module.scss'
+import Titul from '../components/Titul/Titul'
+import About from '../components/About/About';
+import Techno from '../components/Techno/Techno'
+import Steps from "../components/Steps/Steps";
+import Asked from "../components/Asked/Asked";
 
 
 export default function Home({home}: InferGetStaticPropsType<typeof getStaticProps>) {

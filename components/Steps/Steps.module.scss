@@ -1,0 +1,11 @@
+.steps {
+    padding-bottom: 180px;
+    .grid {
+        margin-top: 56px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row: auto;
+        row-gap: 37px;
+    }
+}
+    

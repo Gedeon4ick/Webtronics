@@ -1,9 +1,10 @@
-import styles from '../styles/Techno.module.scss'
+import styles from '../CardTechno/CardTechno.module.scss'
 import Image from 'next/image';
 
 interface Props {
     img: string,
-    name: string
+    name: string,
+
 }
 
 const CardTechno = ({img, name}:Props):JSX.Element => {

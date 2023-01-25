@@ -1,4 +1,4 @@
-import styles from '../styles/Steps.module.scss'
+import styles from '../CardStep/CardStep.module.scss'
 
 interface Props {
     style: object,

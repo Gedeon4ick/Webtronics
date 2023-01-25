@@ -1,6 +1,6 @@
-import styles from '../styles/Steps.module.scss'
-import CardStep from "./CardStep";
-import TitleH2 from "./TitleH2";
+import styles from '../Steps/Steps.module.scss'
+import CardStep from "../CardStep/CardStep";
+import TitleH2 from "../TitleH2/TitleH2";
 
 
 interface Props {
