@@ -1,3 +1,35 @@
 .asked {
     padding-bottom: 180px;
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 24px;
+        margin-top: 56px;
+        .question {
+            display: flex;
+            flex-direction: column;
+            .descr {
+                position: relative;
+                max-width: 243px;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 140%;
+                color: #FFFFFF;
+                &::before {
+                    content: url("../../img/qustion.svg");
+                    position: absolute;
+                    transform: translateY(-893px) scale(0.9);
+                    left: -140%;
+                    z-index: -1;
+                }
+             
+            }
+        }
+        .accordion {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+     
+    }
 }

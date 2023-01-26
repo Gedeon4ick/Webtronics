@@ -1,0 +1,122 @@
+.review {
+    padding-bottom: 180px;
+    .wrapper {
+        display: flex;
+        gap: 24px;
+        .descr {
+            .title {
+                margin-top: 171px;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 120%;
+                color: #FFFFFF;
+            }
+            .subtitle {
+                max-width: 500px;
+                margin-top: 17px;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 140%;
+                color: #FFFFFF;
+            }
+        }
+        .sliderWrapper {
+            .number {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 120%;
+                text-align: center;
+                color: #FFFFFF;
+
+                span {
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 120%;
+                    text-align: center;
+                    color: #FFFFFF;
+                }
+               
+            }
+            .sliderHead {
+                margin-top: 54px;
+                display: flex;
+                justify-content: space-between;
+                .poiner {
+                    display:flex;
+                    justify-content: flex-end;
+                    gap: 24px;
+                    padding-bottom: 16px;
+                    .next {
+                        background: linear-gradient(152.14deg, rgba(21, 191, 253, 0.7) 9.96%, rgba(156, 55, 253, 0.7) 100%);
+                        padding: 0.6px;
+                        border-radius: 8px;
+                        cursor: pointer;
+                        .btnContent {
+                            border-radius: 8px;
+                            padding: 13px 20px;
+                            background:  #151936;
+                            height: 40px;
+                            span {
+                                display: block;
+                                height: 2px;
+                                width: 12px;
+                                background-color: rgb(255, 255, 255);
+                                transform: rotate(-45deg);
+                                &:nth-child(1) {
+                                    transform: translateY(10px) rotate(45deg);
+                                }
+                            }
+                        }
+                       
+                    }
+                    .prev {
+                        background: linear-gradient(152.14deg, rgba(21, 191, 253, 0.7) 9.96%, rgba(156, 55, 253, 0.7) 100%);
+                        padding: 0.6px;
+                        border-radius: 8px;
+                        cursor: pointer;
+                        .btnContent {
+                            border-radius: 8px;
+                            padding: 13px 20px;
+                            background:  #151936;
+                            height: 40px;
+                            span {
+                                display: block;
+                                height: 2px;
+                                width: 12px;
+                                background-color: rgb(255, 255, 255);
+                                transform: rotate(45deg);
+                                &:nth-child(1) {
+                                    transform: translateY(10px) rotate(-45deg);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+           
+            .slider {
+                display: flex;
+                gap: 24px;
+                .bigImage {
+                    background: linear-gradient(152.14deg, rgba(21, 191, 253, 0.7) 9.96%, rgba(156, 55, 253, 0.7) 100%);
+                    clip-path: polygon(20px 0, 100% 0,100% calc(100% - 20px), calc(100% - 20px) 100%,0 100%,0 20px);
+                    padding: 1px;
+    
+                    .bigImageContent {
+                        padding: 16px 196px;
+                        clip-path: polygon(20px 0, 100% 0,100% calc(100% - 20px), calc(100% - 20px) 100%,0 100%,0 20px); 
+                        background:  url("../../img/man.png")center/cover no-repeat;
+                        height: 422px;
+                    }
+                    .smallImageContent {
+                        padding: 16px 92px;
+                        clip-path: polygon(20px 0, 100% 0,100% calc(100% - 20px), calc(100% - 20px) 100%,0 100%,0 20px); 
+                        background:  url("../../img/man.png")center/cover no-repeat;
+                        height: 422px;
+                    }
+                }
+            }
+        }
+        
+    }
+}

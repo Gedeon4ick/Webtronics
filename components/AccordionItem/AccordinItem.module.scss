@@ -1,13 +1,51 @@
 .item {
     max-width: 703px;
     background: linear-gradient(152.14deg, rgba(21, 191, 253, 0.7) 9.96%, rgba(156, 55, 253, 0.7) 100%);
-    clip-path: polygon(40px 0, 100% 0,100% calc(100% - 40px), calc(100% - 40px) 100%,0 100%,0 40px);
+    clip-path: polygon(20px 0, 100% 0,100% calc(100% - 20px), calc(100% - 20px) 100%,0 100%,0 20px);
     padding: 3px;
-    .content {
-        // height: 100px;
-        padding: 10px 30px;
-        clip-path: polygon(40px 0, 100% 0,100% calc(100% - 40px), calc(100% - 40px) 100%,0 100%,0 40px); 
+    .wrapper {
+        padding: 16px 28px;
+
+        position: relative;
+        clip-path: polygon(20px 0, 100% 0,100% calc(100% - 20px), calc(100% - 20px) 100%,0 100%,0 20px); 
         background:  #151936;
+        .icon {
+            position: absolute;
+            right: 20px;
+            top: 29px;
+            cursor: pointer;
+            span {
+                display: block;
+                height: 2px;
+                width: 12px;
+                background-color: rgb(255, 255, 255);
+                transition: all 0.4s ease;
+                &:first-child {
+                    transform: translateY(2px);
+                  }
+                &:last-child {
+                transform: rotate(90deg);
+                }
+                
+                &.active:last-child {
+                transform: rotate(0deg);
+                }
+              }
+              
+        }
+        .title {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 120%;
+            color: #FFFFFF;
+        }
+        .descr {
+            margin-top: 16px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+            color: #FFFFFF;
+        }
     }
 }
 

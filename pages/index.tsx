@@ -7,10 +7,12 @@ import About from '../components/About/About';
 import Techno from '../components/Techno/Techno'
 import Steps from "../components/Steps/Steps";
 import Asked from "../components/Asked/Asked";
+import Review from "../components/ReviewComponent/Review";
+
 
 
 export default function Home({home}: InferGetStaticPropsType<typeof getStaticProps>) {
-  const {menu, mentors, steps} = home  
+  const {menu, mentors, steps, questions} = home  
   
   return (
    <> 
@@ -27,7 +29,8 @@ export default function Home({home}: InferGetStaticPropsType<typeof getStaticPro
               <About mentors={mentors}/>
               <Techno/>
               <Steps steps={steps}/>
-              <Asked/>
+              <Asked questions={questions}/>
+              <Review/>
             </div>
           </header>
    </>
