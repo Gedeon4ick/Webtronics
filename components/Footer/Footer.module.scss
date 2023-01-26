@@ -1,0 +1,53 @@
+.footer {
+    display: flex;
+    gap: 185px;
+    .logo {
+        max-width: 200px;
+        img {
+            width: 170px;
+        }
+        .descr {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: #FFFFFF;
+        }
+    }
+    .footerMenu {
+        .title {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 21px;
+            color: #FFFFFF;
+        }
+        .ul {
+            margin-top: 24px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 145px;
+            row-gap: 29px;
+            .li {
+                list-style-type: none;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                color: #FFFFFF;
+            }
+        }
+        
+    }
+    .icons {
+        .title {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 21px;
+            color: #FFFFFF;
+        }
+        .social {
+            margin-top: 25px;
+            display: flex;
+            gap: 24px;
+        }
+    }
+    
+}

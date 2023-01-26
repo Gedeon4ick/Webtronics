@@ -1,0 +1,21 @@
+.contact {
+    background: linear-gradient(152.14deg, rgba(21, 191, 253, 0.7) 9.96%, rgba(156, 55, 253, 0.7) 100%);
+    padding: 1px;
+    border-radius: 20px;
+    .content {
+        border-radius: 20px;
+        padding: 46px 384px;
+        background: #151936;
+        .subtitle {
+            margin-top: 16px;
+            margin-bottom: 24px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+            text-align: center;
+            color: #FFFFFF;
+        }
+      
+    }
+
+}

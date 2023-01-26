@@ -2,6 +2,7 @@
     margin-top: 116px;
     padding-bottom: 190px;
     display: grid;
+    column-gap: 24px;
     grid-template-columns: repeat(3, minmax(260px, 370px));
     grid-template-rows: repeat(3, auto);
     .element {

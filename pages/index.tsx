@@ -8,6 +8,11 @@ import Techno from '../components/Techno/Techno'
 import Steps from "../components/Steps/Steps";
 import Asked from "../components/Asked/Asked";
 import Review from "../components/ReviewComponent/Review";
+import Gallery from "../components/Gallery/Gallery";
+import Contact from "../components/Contact/Contact";
+import Footer from "../components/Footer/Footer";
+
+
 
 
 
@@ -20,19 +25,34 @@ export default function Home({home}: InferGetStaticPropsType<typeof getStaticPro
         <title>Webtronics</title>
         <meta name="keywords" content="Webtronics,next.js,react" />
       </Head>
-        <header className={styles.header}>
+          <header className={styles.header}>
             <div className="container">
               <nav>
                 <Menu links={menu}/>
               </nav>
               <Titul/>
-              <About mentors={mentors}/>
-              <Techno/>
-              <Steps steps={steps}/>
-              <Asked questions={questions}/>
-              <Review/>
             </div>
           </header>
+          <div className="container">
+            <About mentors={mentors}/>
+                <Techno/>
+                <Steps steps={steps}/>
+                <Asked questions={questions}/>
+                <Review/>
+                <Gallery/>
+                <Contact/>
+            
+          </div>
+          <footer className={styles.footer}>
+            <div className={styles.content}>
+              <div className="container">
+                <Footer links={menu}/>
+              </div>
+            </div>
+            
+            </footer>
+              
+          
    </>
   )
 
