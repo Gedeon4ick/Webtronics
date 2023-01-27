@@ -11,13 +11,14 @@ import Review from '../components/ReviewComponent/Review';
 import Gallery from '../components/Gallery/Gallery';
 import Contact from '../components/Contact/Contact';
 import Footer from '../components/Footer/Footer';
-import Carousel from '../components/Carousel'
 
+import { useSelector } from 'react-redux'
 
 
 
 export default function Home({home}: InferGetStaticPropsType<typeof getStaticProps>) {
   const {menu, mentors, steps, questions} = home  
+  const formData = useSelector(state => state.formData)
   
   return (
    <> 
@@ -40,7 +41,7 @@ export default function Home({home}: InferGetStaticPropsType<typeof getStaticPro
                 <Asked questions={questions}/>
                 <Review/>
                 <Gallery/>
-                <Contact/>
+                <Contact formData={formData}/>
             
           </div>
           <footer className={styles.footer}>

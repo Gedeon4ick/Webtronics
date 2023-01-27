@@ -1,12 +1,16 @@
 import styles from './Button.module.scss'
 
 interface Props {
-    text: string;
+    text: string,
+    handleSubmit: Function
   }
 
-  const Button: React.FC<Props> = ({ text }) => {
+  const Button: React.FC<Props> = ({ text, handleSubmit }) => {
+    const submit = (e) => {
+      handleSubmit(e)
+    }
     return (
-      <button className={styles.button}>
+      <button onClick={submit} className={styles.button}>
         {text}
       </button>
     );

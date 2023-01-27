@@ -23,7 +23,7 @@ const AccordionItem = ({item, active, index, changeItem}:Props):JSX.Element => {
                 </div>
                 {isActive && <div className={styles.descr}>{item.descr}</div>}
                 <div className={styles.icon} onClick={() => changeItem(index)}>
-                    <span className={isActive ? styles.active : styles.span}></span><span></span><span className={isActive ?  styles.active : styles.span}></span>
+                    <span className={isActive ? styles.active : styles.span}></span><span className={isActive ?  styles.active : styles.span}></span>
                 </div>
             </div>
         </div>

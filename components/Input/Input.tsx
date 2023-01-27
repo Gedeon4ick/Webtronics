@@ -2,14 +2,16 @@
 import styles from './Input.module.scss'
 
 interface Props {
-    placeholder: string
+    placeholder: string,
+    handleChange: Function,
+    name: string
 }
 
-const Input = ({placeholder}:Props):JSX.Element => {
+const Input = ({placeholder, handleChange, name}:Props):JSX.Element => {
     return (
         <div className={styles.input}>
             <div className={styles.content} >
-                <input type="text" placeholder={placeholder}/>
+                <input name={name} onChange={(e) => handleChange(e) } type="text" placeholder={placeholder}/>
             </div>
         </div>
     );
