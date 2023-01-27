@@ -1,17 +1,23 @@
 import styles from './Review.module.scss'
-import { useState, useEffect, useRef } from 'react';
+import { useState, useRef } from 'react';
 import TitleH2 from '../TitleH2/TitleH2';
-
-
 
 function Review() {
    
     const [number, setNumber] = useState(1);
-    const [pages, setPages] = useState([]);
     const [offset, setOffset] = useState(-834);
     const [width, setWidth] = useState(205)
     const [activWidth, setaAtivWidth] = useState({width: "392px"});
     const transit = useRef()
+    const items = [
+        { title: "Simple and easy", description: "I am really enjoying the experience of learning a new skill I used to believe that web design was way too complicated for me to learn but so far in this course I have been keeping up and having fun." },
+        { title: "Amazing teaching", description: "The explanation is crazy it really doesn't have a structure to go from point A to point B. He starts to explain something then he change his mind and start with another thing an so on. If you try to learn pro active by doing the same thing with him all along you will get confused and start to loose interest." },
+        { title: "Best courses ever", description: "Good course, up to this point, still ongoing. The only downside, why I gave 4,5 stars, because the 'teacher' sometimes feel like, he is lost, and takes up quite a time, to correct himself, and check back etc." }
+      ];
+    const [currentItem, setCurrentItem] = useState(items[0]);
+    const [currentIndex, setCurrentIndex] = useState(1);
+
+
 
     const next = () => {
         if(number<= 1) {
@@ -30,6 +36,13 @@ function Review() {
             const newOffsett = currentOffset + width
             return newOffsett
         })
+
+        if (currentIndex === items.length - 1) {
+            setCurrentIndex(0);
+          } else {
+            setCurrentIndex(currentIndex + 1);
+          }
+          setCurrentItem(items[currentIndex]);
     }
 
     const prev = () => {
@@ -45,15 +58,18 @@ function Review() {
             })
         }
 
-
         setOffset((currentOffset) => {
             const  newOffset = currentOffset - width
-            const maxOffset = -(width * (pages.length -1))
             return  newOffset
         })
-    }
 
-    
+        if (currentIndex === 0) {
+            setCurrentIndex(items.length - 1);
+          } else {
+            setCurrentIndex(currentIndex - 1);
+          }
+          setCurrentItem(items[currentIndex]);
+    }
 
     return (
        <div className={styles.review}>
@@ -61,13 +77,12 @@ function Review() {
             <div className={styles.wrapper}>
                 <div className={styles.descr}>
                     <div className={styles.title}>
-                        Best courses ever
+                        {currentItem.title}
                     </div>
                     <div className={styles.subtitle}>
-                        Good course, up to this point, still ongoing. The only downside, why I gave 4,5 stars, because the "teacher" sometimes feel like, he is lost, and takes up quite a time, to correct himself, and check back etc.
+                        {currentItem.description}
                     </div>
                 </div>
-                
 
                 <div className={styles.sliderWrapper}>
                     <div className={styles.sliderHead}>
@@ -83,7 +98,6 @@ function Review() {
                             </button>
                         </div>
                     </div>
-                    
 
                     <div className={styles.slider} >
                         <div className={styles.allContainer} ref={transit}
