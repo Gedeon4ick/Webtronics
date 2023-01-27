@@ -4,6 +4,7 @@ import Input from '../Input/Input';
 import Button from '../Button/Button';
 
 
+
 const Contact = () => {
     return (
         <div className={styles.contact}>
@@ -12,10 +13,13 @@ const Contact = () => {
                 <div className={styles.subtitle}>
                     Do you have any kind of help please contact with us.
                 </div>
-                <Input placeholder="Name"/>
-                <Input placeholder="Phone"/>
-                <Input placeholder="E-mail"/>
-                <Button text={"Send"}/>
+                <form className="form">
+                    <Input placeholder='name'/>
+                    <Input placeholder='Phone'/>
+                    <Input placeholder="E-mail"/>
+                    <Button text={"Send"}/>
+                </form>
+               
                 
             </div>
         </div>

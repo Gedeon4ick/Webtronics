@@ -100,57 +100,45 @@
                 .allContainer {
                 display: flex;
                 gap: 24px;
-                transition: translate;
-                transition-property: transform;
-                transition-duration: 300ms;
-                transition-timing-function: ease-in-out;
-                    .bigImage {
+                transition: transform 0.3s ease-in-out;
+           
+                    .card {
                         background: linear-gradient(152.14deg, rgba(21, 191, 253, 0.7) 9.96%, rgba(156, 55, 253, 0.7) 100%);
                         clip-path: polygon(0px 0, 100% 0,100% calc(100% - 50px), calc(100% - 50px) 100%,0 100%,0 50px);
                         padding: 1px;
                         border-radius: 20px;
+                        transition: all 0.5s ease;
                         .bigImageContent {
                             border-radius: 20px;
-                            padding: 16px 196px;
+                            width: 184px;
                             clip-path: polygon(0px 0, 100% 0,100% calc(100% - 50px), calc(100% - 50px) 100%,0 100%,0 50px); 
                             background:  url("../../img/man.png")center/cover no-repeat;
                             height: 422px;
+                            transition: all 0.4s ease;
+
                         }
-                        
-                    }
-                    .woomanImage {
-                        background: linear-gradient(152.14deg, rgba(21, 191, 253, 0.7) 9.96%, rgba(156, 55, 253, 0.7) 100%);
-                        clip-path: polygon(0px 0, 100% 0,100% calc(100% - 30px), calc(100% - 30px) 100%,0 100%,0 30px);
-                        padding: 1px;
-                        border-radius: 20px;
-                        .smallImageContent {
+                        .woomanImageContent {
                             border-radius: 20px;
-                            padding: 16px 92px;
+                            width: 184px;
                             clip-path: polygon(0px 0, 100% 0,100% calc(100% - 30px), calc(100% - 30px) 100%,0 100%,0 30px); 
                             background:  url("../../img/wooman.png")center/cover no-repeat;
                             height: 422px;
+                            transition: all 0.4s ease;
+
                         }
-                    }
-                    .childImage {
-                        background: linear-gradient(152.14deg, rgba(21, 191, 253, 0.7) 9.96%, rgba(156, 55, 253, 0.7) 100%);
-                        clip-path: polygon(0px 0, 100% 0,100% calc(100% - 30px), calc(100% - 30px) 100%,0 100%,0 30px);
-                        padding: 1px;
-                        border-radius: 20px;
                         .smallImageContent {
+                            width: 184px;
                             border-radius: 20px;
-                            padding: 16px 92px;
                             clip-path: polygon(0px 0, 100% 0,100% calc(100% - 30px), calc(100% - 30px) 100%,0 100%,0 30px); 
                             background:  url("../../img/teenager.png")center/cover no-repeat;
                             height: 422px;
+                            transition: all 0.4s ease;
+
                         }
+                        
                     }
                 }
-                
-                
             }
-            
-            
         }
-        
     }
 }

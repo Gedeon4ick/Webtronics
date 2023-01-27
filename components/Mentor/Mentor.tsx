@@ -15,7 +15,9 @@ interface Props {
 
 const Mentor = ({mentor, img}:Props):JSX.Element => {
     return (
+  
             <div className={styles.card}>
+                
                 <Image src={img} alt={mentor.img} className={styles.img}/>
                 <div className={styles.name}>
                     {mentor.name}
@@ -24,6 +26,8 @@ const Mentor = ({mentor, img}:Props):JSX.Element => {
                     {mentor.descr}
                 </div>
             </div>
+  
+            
     );
 };
 

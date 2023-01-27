@@ -1,8 +1,56 @@
 .card {
+    position: relative;
     margin-top: 186px;
-    &:nth-child(2n) {
+    // &:nth-child(1n) {
+    //     position: relative;
+    //     &::before {
+    //         content: "";
+    //         position: absolute;
+    //         top: 55%;
+    //         right: -60%;
+    //         background-image: url('../../img//leftVector.svg');
+    //         width: 198px;
+    //         height: 156px;
+    //     }
+    // }
+    &:nth-child(2) {
         margin-top: 130px;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            top: -32%;
+            left: 43%;
+            background-image: url('../../img/vectorCenter.svg');
+            width: 2px;
+            height: 104px;
+        }
     }
+    &:nth-child(3) {
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            top: -55%;
+            right: 60%;
+            background-image: url('../../img/VectorRight.svg');
+            width: 198px;
+            height: 156px;
+        }
+    }
+    &:nth-child(1) {
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            top: -55%;
+            right: -46%;
+            background-image: url('../../img//leftVector.svg');
+            width: 198px;
+            height: 156px;
+        }
+    }
+    
     .name {
         display: inline-block;
         margin-top: 16px;
@@ -11,6 +59,7 @@
         line-height: 120%;
         text-align: center;
         color: #FFFFFF;
+     
     }
     .subtitle {
         max-width: 185px;
@@ -18,5 +67,7 @@
         font-size: 14px;
         line-height: 140%;
         color: #FFFFFF;
+        
     }
+    
 }

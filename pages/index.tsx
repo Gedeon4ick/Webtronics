@@ -5,13 +5,13 @@ import styles from '../components/Menu/Menu.module.scss'
 import Titul from '../components/Titul/Titul'
 import About from '../components/About/About';
 import Techno from '../components/Techno/Techno'
-import Steps from "../components/Steps/Steps";
-import Asked from "../components/Asked/Asked";
-import Review from "../components/ReviewComponent/Review";
-import Gallery from "../components/Gallery/Gallery";
-import Contact from "../components/Contact/Contact";
-import Footer from "../components/Footer/Footer";
-
+import Steps from '../components/Steps/Steps';
+import Asked from '../components/Asked/Asked';
+import Review from '../components/ReviewComponent/Review';
+import Gallery from '../components/Gallery/Gallery';
+import Contact from '../components/Contact/Contact';
+import Footer from '../components/Footer/Footer';
+import Carousel from '../components/Carousel'
 
 
 

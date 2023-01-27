@@ -1,44 +1,55 @@
 import styles from './Review.module.scss'
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import TitleH2 from '../TitleH2/TitleH2';
 
 
+
 function Review() {
+   
     const [number, setNumber] = useState(1);
     const [pages, setPages] = useState([]);
-    const [offset, setOffset] = useState(0);
-    const [width, setWidth] = useState(200)
-
+    const [offset, setOffset] = useState(-834);
+    const [width, setWidth] = useState(205)
+    const [activWidth, setaAtivWidth] = useState({width: "392px"});
+    const transit = useRef()
 
     const next = () => {
         if(number<= 1) {
             setNumber(3)
+            transit.current.style.transition = 'none'
+            setOffset(currentOffset => {
+                return currentOffset - 3*width 
+            })
+            
         } else {
+            transit.current.style.transition = 'transform 0.3s ease-in-out'
             setNumber(number - 1)
         }
-
+        
         setOffset(currentOffset => {
             const newOffsett = currentOffset + width
-
-            console.log();
-            return Math.min(newOffsett, 0);
+            return newOffsett
         })
     }
 
     const prev = () => {
+        
         if(number<= 2) {
+            transit.current.style.transition = 'transform 0.3s ease-in-out'
             setNumber(number + 1)
         } else {
+            transit.current.style.transition = 'none'
             setNumber(1)
+            setOffset(currentOffset => {
+                return currentOffset + 3*width 
+            })
         }
 
 
         setOffset((currentOffset) => {
             const  newOffset = currentOffset - width
             const maxOffset = -(width * (pages.length -1))
-
-            console.log(newOffset);
-            return Math.max(newOffset, maxOffset) 
+            return  newOffset
         })
     }
 
@@ -74,18 +85,63 @@ function Review() {
                     </div>
                     
 
-                    <div className={styles.slider}>
-                        <div style={{
+                    <div className={styles.slider} >
+                        <div className={styles.allContainer} ref={transit}
+                        style={{
                             transform: `translateX(${offset}px)`
-                        }} className={styles.allContainer}>
-                            <div className={styles.bigImage}>
-                                <div className={styles.bigImageContent}></div>
+                        }}>
+                            <div className={styles.card}>
+                               <div  className={styles.bigImageContent} 
+                                style={number===1 ? activWidth : {}}>
+                                </div> 
                             </div>
-                            <div className={styles.woomanImage}>
-                                <div className={styles.smallImageContent}></div>
+
+                            <div className={styles.card}>
+                               <div className={styles.woomanImageContent}
+                                style={number===2 ? activWidth : {}}
+                                ></div>
                             </div>
-                            <div className={styles.childImage}>
-                                <div className={styles.smallImageContent}></div>
+
+                            <div className={styles.card}>
+                                <div className={styles.smallImageContent}
+                                style={number===3 ? activWidth : {}}
+                                ></div>
+                            </div>
+                            {/* __________________________________ */}
+                            <div className={styles.card}>
+                               <div  className={styles.bigImageContent} 
+                                style={number===1 ? activWidth : {}}>
+                                </div> 
+                            </div>
+
+                            <div className={styles.card}>
+                               <div className={styles.woomanImageContent}
+                                style={number===2 ? activWidth : {}}
+                                ></div>
+                            </div>
+
+                            <div className={styles.card}>
+                                <div className={styles.smallImageContent}
+                                style={number===3 ? activWidth : {}}
+                                ></div>
+                            </div>
+                            {/* _____________________________________ */}
+                            <div className={styles.card}>
+                               <div  className={styles.bigImageContent} 
+                                style={number===1 ? activWidth : {}}>
+                                </div> 
+                            </div>
+
+                            <div className={styles.card}>
+                               <div className={styles.woomanImageContent}
+                                style={number===2 ? activWidth : {}}
+                                ></div>
+                            </div>
+
+                            <div className={styles.card}>
+                                <div className={styles.smallImageContent}
+                                style={number===3 ? activWidth : {}}
+                                ></div>
                             </div>
                         </div>
                     </div>
