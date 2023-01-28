@@ -1,22 +1,24 @@
-import { useState } from "react";
-import TitleH2 from "../TitleH2/TitleH2";
+import { useState } from 'react'
+import TitleH2 from '../TitleH2/TitleH2'
 import styles from '../../components/Asked/Ascked.module.scss'
 import AccordionItem from '../AccordionItem/AccordionItem'
-import Gradient from "../Gradient/Gradient";
+import Gradient from '../Gradient/Gradient'
 
-interface Props {
-    questions: {
-        id: number,
-        title: string,
-        descr: string
-    }[]
+interface Question {
+    id: number,
+    title: string,
+    description: string
+  }
+  
+  interface Props {
+    questions: Question[]
 }
 
-const Asked = ({questions}:Props):JSX.Element => {
+const Asked = ({ questions }:Props):JSX.Element => {
     const [activeEl, setActiveEl] = useState(0)
 
     const changeItem = (i:number) => {
-        return i === activeEl ? setActiveEl(null) : setActiveEl(i)
+        return i === activeEl ? setActiveEl(0) : setActiveEl(i)
       }
 
     return (
@@ -24,7 +26,7 @@ const Asked = ({questions}:Props):JSX.Element => {
             <TitleH2 title={"Frequently Asked Questions"}/>
             <div className={styles.wrapper}>
                 <div className={styles.question}>
-                    <div className={styles.descr}>
+                    <div className={styles.description}>
                         Do you have any kind of questions? We are here to help.
                     </div>
                 </div>
