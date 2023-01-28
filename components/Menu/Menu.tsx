@@ -27,8 +27,3 @@ const Menu = ({ links }: {links: Link[]}): JSX.Element => {
 
 
 export default Menu;
-
-
-
-
-

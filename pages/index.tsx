@@ -2,7 +2,7 @@ import { GetStaticProps, InferGetStaticPropsType  } from "next";
 import Head from 'next/head'
 import Menu from '../components/Menu/Menu'
 import styles from '../components/Menu/Menu.module.scss'
-import Titul from '../components/Titul/Titul'
+import Hero from '../components/Hero/Hero'
 import About from '../components/About/About';
 import Techno from '../components/Techno/Techno'
 import Steps from '../components/Steps/Steps';
@@ -26,7 +26,7 @@ export default function Home({home}: InferGetStaticPropsType<typeof getStaticPro
               <nav>
                 <Menu links={menu}/>
               </nav>
-              <Titul/>
+              <Hero/>
             </div>
           </header>
           <div className="container">

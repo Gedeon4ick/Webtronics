@@ -45,79 +45,79 @@
       {
         "id": 1,
         "name": "Wade Warren",
-        "descr": "Front-end engineers work closely with designers",
-        "img": "wade"
+        "description": "Front-end engineers work closely with designers",
+        "img": "wade.svg"
       },
       {
         "id": 2,
         "name": "Kristin Watson",
-        "descr": "Front-end engineers work closely with designers",
-        "img": "kris"
+        "description": "Front-end engineers work closely with designers",
+        "img": "kris.svg"
       },
       {
         "id": 3,
         "name": "Robert Fox",
-        "descr": "Front-end engineers work closely with designers",
-        "img": "robert"
+        "description": "Front-end engineers work closely with designers",
+        "img": "robert.svg"
       }
     ],
     "steps": [
       {
         "id": 1,
         "title": "Introduction to Front-End",
-        "descr": "Lorem ipsum dolor sit amet consectetur. Elit massa erat vitae non semper quis. "
+        "description": "Lorem ipsum dolor sit amet consectetur. Elit massa erat vitae non semper quis. "
       },
       {
         "id": 2,
         "title": "Overview of Development",
-        "descr": "Lorem ipsum dolor sit amet consectetur. Elit massa erat vitae non semper quis. "
+        "description": "Lorem ipsum dolor sit amet consectetur. Elit massa erat vitae non semper quis. "
       },
       {
         "id": 3,
         "title": "Introduction to Front-End",
-        "descr": "Lorem ipsum dolor sit amet consectetur. Elit massa erat vitae non semper quis. "
+        "description": "Lorem ipsum dolor sit amet consectetur. Elit massa erat vitae non semper quis. "
       },
       {
         "id": 4,
         "title": "Overview of Development",
-        "descr": "Lorem ipsum dolor sit amet consectetur. Elit massa erat vitae non semper quis. "
+        "description": "Lorem ipsum dolor sit amet consectetur. Elit massa erat vitae non semper quis. "
       },
       {
         "id": 5,
         "title": "Introduction to Front-End",
-        "descr": "Lorem ipsum dolor sit amet consectetur. Elit massa erat vitae non semper quis. "
+        "description": "Lorem ipsum dolor sit amet consectetur. Elit massa erat vitae non semper quis. "
       },
       {
         "id": 6,
         "title": "Overview of Development",
-        "descr": "Lorem ipsum dolor sit amet consectetur. Elit massa erat vitae non semper quis. "
+        "description": "Lorem ipsum dolor sit amet consectetur. Elit massa erat vitae non semper quis. "
       }
     ],
     "questions": [
       {
         "id": 1,
         "title": "What is the price?",
-        "descr": "Front-end engineers work closely with designers to make websites beautiful, functional, and fast. This Career Path will teach you not only the necessary languages and technologies, but how to think like a front-end engineer, too."
+        "description": "Front-end engineers work closely with designers to make websites beautiful, functional, and fast. This Career Path will teach you not only the necessary languages and technologies, but how to think like a front-end engineer, too."
       },
       {
         "id": 2,
         "title": "What is the price?",
-        "descr": "Front-end engineers work closely with designers to make websites beautiful, functional, and fast. This Career Path will teach you not only the necessary languages and technologies, but how to think like a front-end engineer, too."
+        "description": "Front-end engineers work closely with designers to make websites beautiful, functional, and fast. This Career Path will teach you not only the necessary languages and technologies, but how to think like a front-end engineer, too."
       },
       {
         "id": 3,
         "title": "What is the price?",
-        "descr": "Front-end engineers work closely with designers to make websites beautiful, functional, and fast. This Career Path will teach you not only the necessary languages and technologies, but how to think like a front-end engineer, too."
+        "description": "Front-end engineers work closely with designers to make websites beautiful, functional, and fast. This Career Path will teach you not only the necessary languages and technologies, but how to think like a front-end engineer, too."
       },
       {
         "id": 4,
         "title": "What is the price?",
-        "descr": "Front-end engineers work closely with designers to make websites beautiful, functional, and fast. This Career Path will teach you not only the necessary languages and technologies, but how to think like a front-end engineer, too."
+        "description": "Front-end engineers work closely with designers to make websites beautiful, functional, and fast. This Career Path will teach you not only the necessary languages and technologies, but how to think like a front-end engineer, too."
       },
       {
         "id": 5,
         "title": "What is the price?",
-        "descr": "Front-end engineers work closely with designers to make websites beautiful, functional, and fast. This Career Path will teach you not only the necessary languages and technologies, but how to think like a front-end engineer, too."
+        "description": "Front-end engineers work closely with designers to make websites beautiful, functional, and fast. This Career Path will teach you not only the necessary languages and technologies, but how to think like a front-end engineer, too."
       }
     ]
   }

@@ -8,7 +8,7 @@ interface Props {
     steps: {
         id: number,
         title: string,
-        descr: string,
+        description: string,
     }[],
 }
 

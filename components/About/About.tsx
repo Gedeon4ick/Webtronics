@@ -1,20 +1,19 @@
 import styles from './About.module.scss'
-import Mentor from '../Mentor/Mentor';
-import TitleH2 from '../TitleH2/TitleH2';
-import wade from '../../img/wade.svg';
-import kris from '../../img/kris.svg';
-import robert from '../../img/robert.svg';
-import Star from '../Star/Star';
+import Mentor from '../Mentor/Mentor'
+import TitleH2 from '../TitleH2/TitleH2'
+import Star from '../Star/Star'
+
+interface Mentor {
+    id: number,
+    name: string,
+    description: string,
+    img: string,
+    center: boolean
+  }
 
 interface Props {
-    mentors: {
-        id: number,
-        name: string,
-        descr: string,
-        img: string,
-        center: boolean
-    }[],
-}
+    mentors: Mentor[]
+  }
 
 const About = ({mentors}:Props) => {
     return (
@@ -26,22 +25,19 @@ const About = ({mentors}:Props) => {
                         Mentors
                     </div>
                     <div className={styles.cards}>
-                        {mentors.map(mentor => {
-                            const img = mentor.img == 'wade' ? wade : mentor.img == 'kris' ? kris : mentor.img == 'robert' ? robert : ''
-                            return <Mentor key={mentor.id} mentor={mentor} img={img} />
-                        })}
+                    {mentors.map(mentor => <Mentor key={mentor.id} mentor={mentor} img={require(`../../img/${mentor.img}`)} />)}
                     </div>
                 </div>
-                <div className={styles.descr}>
+                <div className={styles.description}>
                     Front-end engineers work closely with designers to make websites beautiful, functional, and fast. This Career Path will teach you not only the necessary languages and technologies, but how to think like a front-end engineer, too.
                 </div>
-            <Star top={-10} right={30}/>
-            <Star top={-13} right={50}/>
-            <Star top={0} right={70}/>
-            <Star top={-10} right={5} width={30}/>
+            <Star top={-10} right={30} />
+            <Star top={-13} right={50} />
+            <Star top={0} right={70} />
+            <Star top={-10} right={5} width={30} />
             </div>
         </div>
-    );
-};
+    )
+}
 
-export default About;
+export default About

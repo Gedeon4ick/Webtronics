@@ -5,7 +5,7 @@ interface Props {
     mentor: {
         id: number,
         name: string,
-        descr: string,
+        description: string,
         img: string,
         center: boolean
     },
@@ -23,7 +23,7 @@ const Mentor = ({mentor, img}:Props):JSX.Element => {
                     {mentor.name}
                 </div>
                 <div className={styles.subtitle}>
-                    {mentor.descr}
+                    {mentor.description}
                 </div>
             </div>
   

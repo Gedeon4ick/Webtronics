@@ -5,13 +5,13 @@ interface Props {
     step: {
         id: number,
         title: string,
-        descr: string
+        description: string
     }
 }
 
 
 const CardStep = ({style, step}:Props):JSX.Element => {
-    const {id, title, descr} = step
+    const {id, title, description} = step
     return (
         <div style={style} className={styles.next}>
             <div  className={styles.card}>
@@ -22,7 +22,7 @@ const CardStep = ({style, step}:Props):JSX.Element => {
                     {title}
                 </div>
                 <div className={styles.descr}>
-                    {descr}
+                    {description}
                 </div>
             </div>
         </div>

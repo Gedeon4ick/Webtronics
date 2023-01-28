@@ -4,13 +4,12 @@ interface Props {
     item: {
         id: number,
         title: string,
-        descr: string
+        description: string
     },
     active: number,
     index: number,
-    changeItem: Function
+    changeItem: (index: number) => void
 }
-
 
 const AccordionItem = ({item, active, index, changeItem}:Props):JSX.Element => {
     let isActive = active === index ? true : false
@@ -21,13 +20,13 @@ const AccordionItem = ({item, active, index, changeItem}:Props):JSX.Element => {
                 <div className={styles.title}>
                     {item.title}
                 </div>
-                {isActive && <div className={styles.descr}>{item.descr}</div>}
+                {isActive && <div className={styles.description}>{item.description}</div>}
                 <div className={styles.icon} onClick={() => changeItem(index)}>
                     <span className={isActive ? styles.active : styles.span}></span><span className={isActive ?  styles.active : styles.span}></span>
                 </div>
             </div>
         </div>
-    );
-};
+    )
+}
 
-export default AccordionItem;
+export default AccordionItem

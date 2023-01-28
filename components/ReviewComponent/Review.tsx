@@ -4,7 +4,7 @@ import TitleH2 from '../TitleH2/TitleH2';
 import Gradient from '../Gradient/Gradient';
 import Star from '../Star/Star';
 
-function Review() {
+function Review():JSX.Element {
    
     const [number, setNumber] = useState(1);
     const [offset, setOffset] = useState(-834);
@@ -105,7 +105,7 @@ function Review() {
                             transform: `translateX(${offset}px)`
                         }}>
                             <div className={styles.card}>
-                               <div  className={styles.bigImageContent} 
+                               <div  className={styles.manImageContent} 
                                 style={number===1 ? activWidth : {}}>
                                 </div> 
                             </div>
@@ -117,13 +117,13 @@ function Review() {
                             </div>
 
                             <div className={styles.card}>
-                                <div className={styles.smallImageContent}
+                                <div className={styles.teenagerImageContent}
                                 style={number===3 ? activWidth : {}}
                                 ></div>
                             </div>
                             {/* __________________________________ */}
                             <div className={styles.card}>
-                               <div  className={styles.bigImageContent} 
+                               <div  className={styles.manImageContent} 
                                 style={number===1 ? activWidth : {}}>
                                 </div> 
                             </div>
@@ -135,13 +135,13 @@ function Review() {
                             </div>
 
                             <div className={styles.card}>
-                                <div className={styles.smallImageContent}
+                                <div className={styles.teenagerImageContent}
                                 style={number===3 ? activWidth : {}}
                                 ></div>
                             </div>
                             {/* _____________________________________ */}
                             <div className={styles.card}>
-                               <div  className={styles.bigImageContent} 
+                               <div  className={styles.manImageContent} 
                                 style={number===1 ? activWidth : {}}>
                                 </div> 
                             </div>
@@ -153,7 +153,7 @@ function Review() {
                             </div>
 
                             <div className={styles.card}>
-                                <div className={styles.smallImageContent}
+                                <div className={styles.teenagerImageContent}
                                 style={number===3 ? activWidth : {}}
                                 ></div>
                             </div>
@@ -170,6 +170,3 @@ function Review() {
 
 
 export default Review
-
-
-
