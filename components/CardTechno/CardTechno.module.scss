@@ -1,12 +1,22 @@
 .wrapper {
-    background: url("../../img/Subtract.svg") no-repeat;
-    padding: 25px 9px 25px 10px;
-    .name {
-        margin-top: 16px;
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 120%;
-        text-align: center;
-        color: #FFFFFF;
+    background: linear-gradient(152.14deg, rgba(21, 191, 253, 0.7) 9.96%, rgba(156, 55, 253, 0.7) 100%);
+    clip-path: polygon(0px 0, 100% 0,100% calc(100% - 50px), calc(100% - 50px) 100%,0 100%,0 50px);
+    padding: 1px;
+    border-radius: 20px;
+    .content {
+        padding: 25px 9px 25px 10px;
+        border-radius: 20px;
+        width: 182px;
+        clip-path: polygon(0px 0, 100% 0,100% calc(100% - 50px), calc(100% - 50px) 100%,0 100%,0 50px); 
+        background-color:  #151936;;
+        .name {
+            margin-top: 16px;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 120%;
+            text-align: center;
+            color: #FFFFFF;
+        }
     }
+    
 }

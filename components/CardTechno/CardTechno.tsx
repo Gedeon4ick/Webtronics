@@ -10,9 +10,11 @@ interface Props {
 const CardTechno = ({img, name}:Props):JSX.Element => {
     return (
         <div className={styles.wrapper}>
-            <Image src={img} alt={img}/>
-            <div className={styles.name}>
-                {name}
+            <div className={styles.content}>
+                <Image src={img} alt={img}/>
+                <div className={styles.name}>
+                    {name}
+                </div>
             </div>
         </div>
     );

@@ -1,19 +1,15 @@
-import styles from './Button.module.scss'
+import styles from "./Button.module.scss";
 
 interface Props {
-    text: string,
-    handleSubmit: Function
-  }
+  text: string;
+}
 
-  const Button = ({ text, handleSubmit }: Props) => {
-    return (
-        <button onClick={handleSubmit} className={styles.button}>
-            {text}
-        </button>
-    );
+const Button = ({ text }: Props) => {
+  return (
+    <button type="submit" className={styles.button}>
+      {text}
+    </button>
+  );
 };
-  
-  export default Button;
 
-  
-  
+export default Button;
