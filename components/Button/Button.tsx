@@ -5,16 +5,13 @@ interface Props {
     handleSubmit: Function
   }
 
-  const Button: React.FC<Props> = ({ text, handleSubmit }) => {
-    const submit = (e) => {
-      handleSubmit(e)
-    }
+  const Button = ({ text, handleSubmit }: Props) => {
     return (
-      <button onClick={submit} className={styles.button}>
-        {text}
-      </button>
+        <button onClick={handleSubmit} className={styles.button}>
+            {text}
+        </button>
     );
-  };
+};
   
   export default Button;
 
