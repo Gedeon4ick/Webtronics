@@ -1,5 +1,7 @@
 import styles from './Titul.module.scss'
 import Button from '../Button/Button';
+import Gradient from '../Gradient/Gradient'
+import Stars from '../Stars/Stars';
 
 const Titul = () => {
     return (
@@ -22,7 +24,8 @@ const Titul = () => {
                 <div className={`${styles.element} + ${styles.develop}`}>
                     <h3 className={styles.courses}>Courses</h3> 
                 </div>   
-                  
+                <Gradient top={40} right={-10}/>
+                <Gradient top={50} right={80} />
             </div>
         </>
     );

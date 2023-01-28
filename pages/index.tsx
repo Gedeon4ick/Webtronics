@@ -45,10 +45,7 @@ export default function Home({home}: InferGetStaticPropsType<typeof getStaticPro
                 <Footer links={menu}/>
               </div>
             </div>
-            
             </footer>
-              
-          
    </>
   )
 

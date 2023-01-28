@@ -2,8 +2,7 @@ import { useState } from "react";
 import TitleH2 from "../TitleH2/TitleH2";
 import styles from '../../components/Asked/Ascked.module.scss'
 import AccordionItem from '../AccordionItem/AccordionItem'
-import Image from "next/image";
-import qustion from '../../img/qustion.svg'
+import Gradient from "../Gradient/Gradient";
 
 interface Props {
     questions: {
@@ -12,7 +11,6 @@ interface Props {
         descr: string
     }[]
 }
-
 
 const Asked = ({questions}:Props):JSX.Element => {
     const [activeEl, setActiveEl] = useState(0)
@@ -43,6 +41,7 @@ const Asked = ({questions}:Props):JSX.Element => {
                     }
                 </div>  
             </div>
+            <Gradient top={0} right={-10}/>
         </div>
     );
 };

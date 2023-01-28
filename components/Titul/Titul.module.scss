@@ -5,6 +5,17 @@
     column-gap: 24px;
     grid-template-columns: repeat(3, minmax(260px, 370px));
     grid-template-rows: repeat(3, auto);
+    position: relative;
+    .gradient {
+        position: absolute;
+        width: 356px;
+        height: 356px;
+        top: 40%;
+        right: -10%;
+        background: #2A3E84;
+        z-index: -1;
+        filter: blur(175px);
+    }
     .element {
         display: flex;
         align-items: center;

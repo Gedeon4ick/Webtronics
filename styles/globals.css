@@ -22,4 +22,5 @@ header {
 
 html {
   background-color: #0C102D;
+  overflow-x: hidden;
 }

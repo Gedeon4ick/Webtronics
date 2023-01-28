@@ -10,7 +10,7 @@ interface Props {
 const Input = ({placeholder, name, register, textError }:Props):JSX.Element => {
 
     return (
-        <div className={styles.root}>
+        <div className={styles.root }>
             <div className={styles.input}>
                 <div className={styles.content} >
                     <input name={name} {...register(name)} type="text" placeholder={placeholder}/>

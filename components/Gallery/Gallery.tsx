@@ -4,6 +4,7 @@ import dev1 from '../../img/grid/developer 1.png'
 import dev2 from '../../img/grid/developer 2.png'
 import dev3 from '../../img/grid/developer 3.png'
 import dev4 from '../../img/grid/deloper 4.png'
+import Gradient from '../Gradient/Gradient';
 
 import Image from 'next/image';
 
@@ -31,6 +32,7 @@ const Gallery = () => {
                     <Image src={dev4} alt="developer"></Image>
                 </div>
             </div>
+            <Gradient top={50} right={80} index={-1}/>
         </div>
     );
 };

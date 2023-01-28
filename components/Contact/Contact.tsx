@@ -3,6 +3,7 @@ import TitleH2 from "../TitleH2/TitleH2";
 import Input from "../Input/Input";
 import Button from "../Button/Button";
 import axios from "axios";
+import Gradient from "../Gradient/Gradient";
 import { FieldValues, useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as Yup from "yup";
@@ -72,6 +73,7 @@ const Contact = (): JSX.Element => {
           <Button text="Send" />
         </form>
       </div>
+      <Gradient top={-20} right={-20}/>
     </div>
   );
 };

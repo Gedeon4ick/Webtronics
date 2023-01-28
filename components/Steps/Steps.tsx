@@ -1,7 +1,7 @@
 import styles from '../Steps/Steps.module.scss'
 import CardStep from "../CardStep/CardStep";
 import TitleH2 from "../TitleH2/TitleH2";
-
+import Gradient from '../Gradient/Gradient';
 
 interface Props {
     steps: {
@@ -30,6 +30,7 @@ const Steps = ({steps}:Props):JSX.Element => {
             <div className={styles.grid}>
                 {content}
             </div>
+            <Gradient top={30} right={70}/>
         </div>
     );
 };

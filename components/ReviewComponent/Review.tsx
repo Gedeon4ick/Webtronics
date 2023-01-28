@@ -1,6 +1,7 @@
 import styles from './Review.module.scss'
 import { useState, useRef } from 'react';
 import TitleH2 from '../TitleH2/TitleH2';
+import Gradient from '../Gradient/Gradient';
 
 function Review() {
    
@@ -161,6 +162,8 @@ function Review() {
                     </div>
                 </div>
             </div> 
+            <Gradient top={30} right={-10} index={-1}/>
+            <Gradient top={-10} right={70}/>
        </div>
     );
 };

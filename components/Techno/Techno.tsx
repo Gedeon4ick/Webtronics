@@ -5,6 +5,7 @@ import angular from '../../img/angular.svg';
 import react from '../../img/react.svg'
 import vue from '../../img/vue.svg'
 import js from '../../img/js.svg'
+import Gradient from '../Gradient/Gradient';
 
 
 const Techno = () => {
@@ -20,6 +21,8 @@ const Techno = () => {
                 <CardTechno img={vue} name={"Vue.js"}/>
                 <CardTechno img={js} name={"JavaScript"}/>
             </div>
+            <Gradient top={-20} right={-20}/>
+            <Gradient top={60} right={70}/>
         </div>
     );
 };
