@@ -6,6 +6,7 @@ import react from '../../img/react.svg'
 import vue from '../../img/vue.svg'
 import js from '../../img/js.svg'
 import Gradient from '../Gradient/Gradient';
+import Star from '../Star/Star';
 
 
 const Techno = () => {
@@ -22,7 +23,10 @@ const Techno = () => {
                 <CardTechno img={js} name={"JavaScript"}/>
             </div>
             <Gradient top={-20} right={-20}/>
-            <Gradient top={60} right={70}/>
+            <Gradient top={60} right={75} background={"#2A3E84"}/>
+            <Star top={0} right={0} width={40}/>
+            <Star top={-20} right={20} />
+            <Star top={-35} right={30} />
         </div>
     );
 };

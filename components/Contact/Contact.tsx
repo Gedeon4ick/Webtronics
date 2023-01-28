@@ -6,6 +6,7 @@ import axios from "axios";
 import Gradient from "../Gradient/Gradient";
 import { FieldValues, useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
+import Star from "../Star/Star";
 import * as Yup from "yup";
 
 const Contact = (): JSX.Element => {
@@ -32,17 +33,17 @@ const Contact = (): JSX.Element => {
   } = useForm({
     resolver: yupResolver(schema),
     mode: 'onChange',
-  });
+  })
 
   const onSubmit = async (data: FieldValues) => {
     try {
-      axios.post("http://localhost:3004/feedback", data);
+      axios.post("http://localhost:3004/feedback", data)
       reset();
     } catch (err) {
-      console.log(err);
-      return err;
+      console.log(err)
+      return err
     }
-  };
+  }
 
   return (
     <div className={styles.contact}>
@@ -73,9 +74,12 @@ const Contact = (): JSX.Element => {
           <Button text="Send" />
         </form>
       </div>
-      <Gradient top={-20} right={-20}/>
+      <Gradient top={-20} right={-20} background={"#2A3E84"} />
+      <Star top={-65} right={30} width={30} />
+      <Star top={-35} right={45} />
+      <Star top={-15} right={75} />
     </div>
-  );
-};
+  )
+}
 
-export default Contact;
+export default Contact

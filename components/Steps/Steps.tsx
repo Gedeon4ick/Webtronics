@@ -1,7 +1,8 @@
 import styles from '../Steps/Steps.module.scss'
-import CardStep from "../CardStep/CardStep";
-import TitleH2 from "../TitleH2/TitleH2";
-import Gradient from '../Gradient/Gradient';
+import CardStep from "../CardStep/CardStep"
+import TitleH2 from "../TitleH2/TitleH2"
+import Gradient from '../Gradient/Gradient'
+import Star from '../Star/Star'
 
 interface Props {
     steps: {
@@ -12,9 +13,9 @@ interface Props {
 }
 
 const Steps = ({steps}:Props):JSX.Element => {
-    let delta = 0;
+    let delta = 0
     const content = steps.map((step, i) => {
-        const n: number = i + 1;
+        const n: number = i + 1
         const attitude: string = `${n+delta}/${n+2+delta}`
         const style: object = {
             gridRow: attitude
@@ -31,8 +32,14 @@ const Steps = ({steps}:Props):JSX.Element => {
                 {content}
             </div>
             <Gradient top={30} right={70}/>
+            <Star top={0} right={70} width={30} />
+            <Star top={30} right={90} />
+            <Star top={30} right={-5} width={30} />
+            <Star top={40} right={30} />
+            <Star top={60} right={0} />
+           
         </div>
-    );
-};
+    )
+}
 
-export default Steps;
+export default Steps

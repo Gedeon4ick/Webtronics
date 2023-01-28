@@ -41,9 +41,9 @@ const Asked = ({questions}:Props):JSX.Element => {
                     }
                 </div>  
             </div>
-            <Gradient top={0} right={-10}/>
+            <Gradient top={0} right={-10} background={"#2A3E84"} index={-1}/>
         </div>
-    );
-};
+    )
+}
 
-export default Asked;
+export default Asked

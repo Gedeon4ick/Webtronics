@@ -1,7 +1,7 @@
 import styles from './Titul.module.scss'
 import Button from '../Button/Button';
 import Gradient from '../Gradient/Gradient'
-import Stars from '../Stars/Stars';
+import Stars from '../Star/Star';
 
 const Titul = () => {
     return (

@@ -2,6 +2,7 @@ import styles from './Review.module.scss'
 import { useState, useRef } from 'react';
 import TitleH2 from '../TitleH2/TitleH2';
 import Gradient from '../Gradient/Gradient';
+import Star from '../Star/Star';
 
 function Review() {
    
@@ -15,10 +16,8 @@ function Review() {
         { title: "Amazing teaching", description: "The explanation is crazy it really doesn't have a structure to go from point A to point B. He starts to explain something then he change his mind and start with another thing an so on. If you try to learn pro active by doing the same thing with him all along you will get confused and start to loose interest." },
         { title: "Best courses ever", description: "Good course, up to this point, still ongoing. The only downside, why I gave 4,5 stars, because the 'teacher' sometimes feel like, he is lost, and takes up quite a time, to correct himself, and check back etc." }
       ];
-    const [currentItem, setCurrentItem] = useState(items[0]);
-    const [currentIndex, setCurrentIndex] = useState(1);
-
-
+    const [currentItem, setCurrentItem] = useState(items[0])
+    const [currentIndex, setCurrentIndex] = useState(1)
 
     const next = () => {
         if(number<= 1) {
@@ -41,9 +40,9 @@ function Review() {
         if (currentIndex === items.length - 1) {
             setCurrentIndex(0);
           } else {
-            setCurrentIndex(currentIndex + 1);
+            setCurrentIndex(currentIndex + 1)
           }
-          setCurrentItem(items[currentIndex]);
+          setCurrentItem(items[currentIndex])
     }
 
     const prev = () => {
@@ -65,11 +64,11 @@ function Review() {
         })
 
         if (currentIndex === 0) {
-            setCurrentIndex(items.length - 1);
+            setCurrentIndex(items.length - 1)
           } else {
-            setCurrentIndex(currentIndex - 1);
+            setCurrentIndex(currentIndex - 1)
           }
-          setCurrentItem(items[currentIndex]);
+          setCurrentItem(items[currentIndex])
     }
 
     return (
@@ -164,11 +163,13 @@ function Review() {
             </div> 
             <Gradient top={30} right={-10} index={-1}/>
             <Gradient top={-10} right={70}/>
+            <Star top={40} right={-5} width={30}/>
        </div>
-    );
-};
+    )
+}
 
-export default Review;
+
+export default Review
 
 
 
