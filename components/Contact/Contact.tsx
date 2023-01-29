@@ -46,7 +46,7 @@ const Contact = (): JSX.Element => {
 	}
 
 	return (
-		<div className={styles.contact}>
+		<div id="Get-in-touch" className={styles.contact}>
 			<div className={styles.content}>
 				<TitleH2 title="Contact us" />
 				<div className={styles.subtitle}>

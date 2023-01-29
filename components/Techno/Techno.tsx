@@ -10,7 +10,7 @@ import Star from '../Star/Star'
 
 const Techno = () => {
 	return (
-		<div className={styles.techno}>
+		<div id="Programs" className={styles.techno}>
 			<TitleH2 title="Programming technologies" />
 			<div className={styles.subtitle}>
 				By the end, you’ll have the portfolio and interview skills you need to start your new career.

@@ -18,11 +18,11 @@ const Asked = ({ questions }: Props): JSX.Element => {
 	const [activeElement, setActiveElement] = useState(0)
 
 	const changeItem = (i: number) => {
-		return i === activeElement ? setActiveElement(null) : setActiveElement(i)
+		return i === activeElement ? setActiveElement(questions.length + 1) : setActiveElement(i)
 	}
 
 	return (
-		<div className={styles.asked}>
+		<div id="Questions" className={styles.asked}>
 			<TitleH2 title="Frequently Asked Questions" />
 			<div className={styles.wrapper}>
 				<div className={styles.question}>

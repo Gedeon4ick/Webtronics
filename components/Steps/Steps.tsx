@@ -27,7 +27,7 @@ const Steps = ({ steps }: Props): JSX.Element => {
 	})
 
 	return (
-		<div className={styles.steps}>
+		<div id="Steps" className={styles.steps}>
 			<TitleH2 title="Steps" />
 			<div className={styles.grid}>
 				{content}

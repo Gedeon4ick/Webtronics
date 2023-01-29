@@ -5,15 +5,16 @@ import facebook from '../../icons/facebook.svg'
 import social from '../../icons/social.svg'
 import twiter from '../../icons/twiter.svg'
 import LinkedIn from '../../icons/LinkedIn.svg'
+import { Link } from 'react-scroll/modules'
 
-type Link = {
+type LinkMenu = {
 	id: number
 	name: string
 	href: string
 }
 
 interface Props {
-	links: Link[]
+	links: LinkMenu[]
 }
 
 const Footer = ({ links }: Props): JSX.Element => {
@@ -33,7 +34,7 @@ const Footer = ({ links }: Props): JSX.Element => {
 				<ul className={styles.ul}>
 					{links.map(link =>
 						<li className={styles.li} key={link.id}>
-							<a className={styles.a} href={link.href}>{link.name}</a>
+							<Link className={styles.a} to={link.href} spy={true} smooth={true} duration={700} offset={-50}>{link.name}</Link>
 						</li>
 					)}
 				</ul>

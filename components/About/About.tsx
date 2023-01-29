@@ -17,7 +17,7 @@ interface Props {
 
 const About = ({ mentors }: Props) => {
 	return (
-		<div>
+		<div id="About">
 			<TitleH2 title="About Us" />
 			<div className={styles.content}>
 				<div className={styles.wrapper}>

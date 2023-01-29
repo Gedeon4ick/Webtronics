@@ -4,7 +4,7 @@ interface Props {
 	placeholder: string,
 	name: string,
 	register: any,
-	textError?: string,
+	textError?: string | any,
 }
 
 const Input = ({ placeholder, name, register, textError }: Props): JSX.Element => {
