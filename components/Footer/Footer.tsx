@@ -35,7 +35,6 @@ const Footer = ({ links }: {links: Link[]}): JSX.Element => {
                     )}
                 </ul>
                 </div>
-               
             
             <div className={styles.icons}>
                 <div className={styles.title}>
@@ -49,7 +48,7 @@ const Footer = ({ links }: {links: Link[]}): JSX.Element => {
                 </div>
             </div>
         </div>
-    );
-};
+    )
+}
 
-export default Footer;
+export default Footer

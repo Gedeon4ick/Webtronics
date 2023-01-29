@@ -15,15 +15,15 @@ interface Question {
 }
 
 const Asked = ({ questions }:Props):JSX.Element => {
-    const [activeEl, setActiveEl] = useState(0)
+    const [activeElement, setActiveElement] = useState(0)
 
     const changeItem = (i:number) => {
-        return i === activeEl ? setActiveEl(0) : setActiveEl(i)
+        return i === activeElement ? setActiveElement(null) : setActiveElement(i)
       }
 
     return (
         <div className={styles.asked}>
-            <TitleH2 title={"Frequently Asked Questions"}/>
+            <TitleH2 title="Frequently Asked Questions"/>
             <div className={styles.wrapper}>
                 <div className={styles.question}>
                     <div className={styles.description}>
@@ -37,13 +37,13 @@ const Asked = ({ questions }:Props):JSX.Element => {
                           key={question.id} 
                           index={i}
                           changeItem={changeItem}
-                          active={activeEl}
+                          active={activeElement}
                           item={question}/>
                         )
                     }
-                </div>  
+                </div>
             </div>
-            <Gradient top={0} right={-10} background={"#2A3E84"} index={-1}/>
+            <Gradient top={0} right={-10} background="#2A3E84" index={-1}/>
         </div>
     )
 }

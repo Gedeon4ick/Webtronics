@@ -1,19 +1,15 @@
 import styles from '../CardStep/CardStep.module.scss'
+import { Step } from '../Steps'
 
 interface Props {
-    style: object,
-    step: {
-        id: number,
-        title: string,
-        description: string
-    }
+    gridConfig: Record<string, string>,
+    step: Step
 }
 
-
-const CardStep = ({style, step}:Props):JSX.Element => {
+const CardStep = ({ gridConfig, step}:Props):JSX.Element => {
     const {id, title, description} = step
     return (
-        <div style={style} className={styles.next}>
+        <div style={{ ...gridConfig }} className={styles.next}>
             <div  className={styles.card}>
                 <div className={styles.title}>
                     Step {id}
@@ -27,7 +23,7 @@ const CardStep = ({style, step}:Props):JSX.Element => {
             </div>
         </div>
         
-    );
-};
+    )
+}
 
-export default CardStep;
+export default CardStep

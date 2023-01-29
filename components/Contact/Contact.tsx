@@ -1,13 +1,13 @@
-import styles from "./Contact.module.scss";
-import TitleH2 from "../TitleH2/TitleH2";
-import Input from "../Input/Input";
-import Button from "../Button/Button";
-import axios from "axios";
-import Gradient from "../Gradient/Gradient";
-import { FieldValues, useForm } from "react-hook-form";
-import { yupResolver } from "@hookform/resolvers/yup";
-import Star from "../Star/Star";
-import * as Yup from "yup";
+import styles from './Contact.module.scss'
+import TitleH2 from '../TitleH2/TitleH2'
+import Input from '../Input/Input'
+import Button from '../Button/Button'
+import axios from 'axios'
+import Gradient from '../Gradient/Gradient'
+import { FieldValues, useForm } from 'react-hook-form'
+import { yupResolver } from '@hookform/resolvers/yup'
+import Star from '../Star/Star'
+import * as Yup from 'yup'
 
 const Contact = (): JSX.Element => {
   const schema = Yup.object().shape({
@@ -23,7 +23,7 @@ const Contact = (): JSX.Element => {
         "Phone number must be in the format: 88888888888"
       )
       .required("Phone number is required"),
-  });
+  })
 
   const {
     register,
@@ -38,7 +38,7 @@ const Contact = (): JSX.Element => {
   const onSubmit = async (data: FieldValues) => {
     try {
       axios.post("http://localhost:3004/feedback", data)
-      reset();
+      reset()
     } catch (err) {
       console.log(err)
       return err
@@ -48,7 +48,7 @@ const Contact = (): JSX.Element => {
   return (
     <div className={styles.contact}>
       <div className={styles.content}>
-        <TitleH2 title={"Contact us"} />
+        <TitleH2 title="Contact us"/>
         <div className={styles.subtitle}>
           Do you have any kind of help please contact with us.
         </div>
@@ -71,13 +71,13 @@ const Contact = (): JSX.Element => {
             name="email"
             placeholder="E-mail"
           />
-          <Button text="Send" />
+          <Button text="Send"/>
         </form>
       </div>
-      <Gradient top={-20} right={-20} background={"#2A3E84"} />
-      <Star top={-65} right={30} width={30} />
-      <Star top={-35} right={45} />
-      <Star top={-15} right={75} />
+      <Gradient top={-20} right={-20} background="#2A3E84"/>
+      <Star top={-65} right={30} width={30}/>
+      <Star top={-35} right={45}/>
+      <Star top={-15} right={75}/>
     </div>
   )
 }
