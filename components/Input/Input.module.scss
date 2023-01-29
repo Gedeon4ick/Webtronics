@@ -23,6 +23,9 @@
                 color: #A2CBFB;
             }
         }
+        &.error {
+            background: red;
+        }
     }
     .error {
         color:rgba(220, 7, 74, 0.7);
