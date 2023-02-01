@@ -42,7 +42,7 @@ const Steps = ({ steps }: Props): JSX.Element => {
 	}
 
 	return (
-		<div ref={cont}  id="Steps" className={styles.steps}>
+		<div ref={cont} id="Steps" className={styles.steps}>
 			<TitleH2 title="Steps" />
 			<div style={styleMob} className={styles.grid}>
 				{content}

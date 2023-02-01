@@ -23,7 +23,7 @@ const Asked = ({ questions }: Props): JSX.Element => {
 
 	return (
 		<div id="Questions" className={styles.asked}>
-			<TitleH2 title="Frequently Asked Questions" />
+			<TitleH2 fontSize={styles.adaptive} title="Frequently Asked Questions" />
 			<div className={styles.wrapper}>
 				<div className={styles.question}>
 					<div className={styles.description}>
@@ -43,7 +43,7 @@ const Asked = ({ questions }: Props): JSX.Element => {
 					}
 				</div>
 			</div>
-			<Gradient top={0} right={-10} background="#2A3E84" index={-1} />
+			<Gradient />
 		</div>
 	)
 }

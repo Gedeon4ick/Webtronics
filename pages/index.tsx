@@ -37,9 +37,9 @@ export default function Home({ home }: InferGetStaticPropsType<typeof getStaticP
 			<div className="container">
 				<About mentors={mentors} />
 				<Techno />
-				<Steps steps={steps} />
-				{/* <Asked questions={questions} />
-				<Review />
+				{/* <Steps steps={steps} /> */}
+				<Asked questions={questions} />
+				{/* <Review />
 				<Gallery />
 				<Contact /> */}
 			</div>
