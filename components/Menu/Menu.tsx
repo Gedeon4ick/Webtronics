@@ -11,15 +11,19 @@ type LinkMenu = {
 }
 
 interface Props {
-	links: LinkMenu[]
+	links: LinkMenu[],
+	active: boolean,
+	setActive: Function
 }
 
-const Menu = ({ links }: Props): JSX.Element => {
+const Menu = ({ links, setActive, active }: Props): JSX.Element => {
 	return (
-		<div className={styles.menu}>
+		<div className="container">
+			<div className={styles.menu}>
 			<div className={styles.img}>
 				<Image src={Logo} alt="logo" />
 			</div>
+			<div onClick={() => setActive(!active)} className={styles.hamburger}><span/><span/><span/></div>
 			<ul className={styles.ul}>
 				{links.map(link =>
 					<li className={styles.li} key={link.id}>
@@ -28,6 +32,8 @@ const Menu = ({ links }: Props): JSX.Element => {
 				)}
 			</ul>
 		</div>
+		</div>
+		
 	)
 }
 

@@ -1,4 +1,5 @@
 import { GetStaticProps, InferGetStaticPropsType } from "next"
+import { useState } from "react"
 import Head from 'next/head'
 import Menu from '../components/Menu/Menu'
 import styles from '../components/Menu/Menu.module.scss'
@@ -11,9 +12,11 @@ import Review from '../components/ReviewComponent/Review';
 import Gallery from '../components/Gallery/Gallery'
 import Contact from '../components/Contact/Contact'
 import Footer from '../components/Footer/Footer'
+import MobailMenu from "../components/MobailMenu/MobilelMenu"
 
 export default function Home({ home }: InferGetStaticPropsType<typeof getStaticProps>) {
 	const { menu, mentors, steps, questions } = home
+	const [menuActive, setMenuActive] = useState(false)
 
 	return (
 		<>
@@ -25,21 +28,20 @@ export default function Home({ home }: InferGetStaticPropsType<typeof getStaticP
 				<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
 			</Head>
 			<header className={styles.header}>
-				<div className="container">
 					<nav>
-						<Menu links={menu} />
+						<MobailMenu active={menuActive} setActive={setMenuActive} links={menu} />
+						<Menu links={menu} setActive={setMenuActive} active={menuActive}/>
 					</nav>
 					<Hero />
-				</div>
 			</header>
 			<div className="container">
 				<About mentors={mentors} />
-				<Techno />
+				{/* <Techno />
 				<Steps steps={steps} />
 				<Asked questions={questions} />
 				<Review />
 				<Gallery />
-				<Contact />
+				<Contact /> */}
 			</div>
 			<footer className={styles.footer}>
 				<div className={styles.content}>

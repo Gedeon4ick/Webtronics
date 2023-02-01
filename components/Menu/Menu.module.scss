@@ -1,36 +1,58 @@
 .header {
-    padding: 40px 0;
+    // padding: 40px 0;
+    padding: 0;
     height: 815px;
     background-image: url('../../img/bg.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-.menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    .ul {
+    position: relative;
+    nav {
+        padding: 20px 0;
+    }
+    .menu {
         display: flex;
-        gap: 48px;
-        .li {
-            list-style-type: none;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 140%;
+        align-items: center;
+        justify-content: space-between;
+        .ul {
             display: flex;
-            align-items: center;
-            color: #FFFFFF;
-            cursor: pointer;
+            gap: 48px;
+            .li {
+                list-style-type: none;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 140%;
+                display: flex;
+                align-items: center;
+                color: #FFFFFF;
+                cursor: pointer;
+            }
         }
-    }
-    .img {
-        img {
-            width: 169px;
-            height: 33px;
+        .img {
+            img {
+                width: 169px;
+                height: 33px;
+            }
+        }
+        .hamburger {
+            top: 20px;
+            right: 30px;
+            display: none;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-end;
+            span {
+                margin-bottom: 5px;
+                display: block;
+                width: 30px;
+                height: 3px;
+                background: rgb(255, 255, 255);
+                transition: 0.4s all;
+            }
         }
     }
 }
-}
+
 .footer {
     margin-top: 156px;
     background: linear-gradient(152.14deg, rgba(21, 191, 253, 0.7) 9.96%, rgba(156, 55, 253, 0.7) 100%);
@@ -39,4 +61,26 @@
         padding: 33px 0;
         background: #151936;
     }
+}
+
+@media (max-width: 760px) {
+    .header {
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 2;
+            background: #151936;
+    
+            border-bottom: 1px solid #fff;
+        }
+        .menu {
+            .ul {
+                display: none;
+            }
+            .hamburger {
+                display: flex;
+            }
+        }
+    }
+   
 }

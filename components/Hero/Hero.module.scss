@@ -6,16 +6,9 @@
     grid-template-columns: repeat(3, minmax(260px, 370px));
     grid-template-rows: repeat(3, auto);
     position: relative;
-    .gradient {
-        position: absolute;
-        width: 356px;
-        height: 356px;
-        top: 40%;
-        right: -10%;
-        background: #2A3E84;
-        z-index: -1;
-        filter: blur(175px);
-    }
+    width: 100%;
+   
+   
     .element {
         display: flex;
         align-items: center;
@@ -58,3 +51,75 @@
     align-items: center;
     color: #FFFFFF;
 }
+
+.gradientRightPosition {
+    top: 40%;
+    right: -10%;
+}
+
+.gradientLeftPosition {
+    top: 40%;
+    right: 80%;
+}
+
+@media (max-width: 1550px) {
+    .gradientRightPosition {
+        right: 10%;
+    }
+}
+
+
+@media (max-width: 1170px) {
+    .wrapper {
+        .element {
+            h1 {
+                font-size: 120px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1110px) {
+    .gradientRightPosition {
+        right: 30%;
+    }
+    .gradientLeftPosition {
+        display: none;
+    }
+}
+
+@media (max-width: 975px) {
+    .wrapper {
+        grid-template-columns: minmax(260px, 870px);
+        gap: 30px;
+        .element {
+            &:nth-child(2) {
+                grid-row: 3/4;
+            }
+            &:nth-child(3) {
+                grid-row: 4/5;
+            }
+            &.front {
+                grid-column: inherit;
+            }
+            &.develop {
+                grid-column: inherit;    
+                grid-row: 5/6;
+            }
+            h1 {
+                line-height: 90%;
+            }
+        }
+    }
+}
+
+@media (max-width: 630px) {
+    .wrapper {
+        .element {
+            h1 {
+                font-size: 70px;
+            }
+        }
+    }
+}
+

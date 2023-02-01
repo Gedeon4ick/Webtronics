@@ -1,21 +1,13 @@
 import styles from './Gradient.module.scss'
 
 interface Props {
-	top: number,
-	right: number,
-	index?: number,
-	background?: string
+	position: string
 }
 
-const Gradient = ({ top, right, index, background }: Props): JSX.Element => {
-	const style = {
-		top: `${top}%`,
-		right: `${right}%`,
-		zIndex: `${index}`,
-		background: `${background}`
-	}
+const Gradient = ({ position }: Props): JSX.Element => {
+
 	return (
-		<div style={style} className={styles.gradient}></div>
+		<div className={`${styles.gradient} ${position}`}></div>
 	)
 }
 
