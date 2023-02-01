@@ -26,8 +26,8 @@ const Menu = ({ links, setActive, active }: Props): JSX.Element => {
 			<div onClick={() => setActive(!active)} className={styles.hamburger}><span/><span/><span/></div>
 			<ul className={styles.ul}>
 				{links.map(link =>
-					<li className={styles.li} key={link.id}>
-						<Link className={styles.a} to={link.href} spy={true} smooth={true} duration={700} offset={-50}>{link.name}</Link>
+					<li  className={styles.li} key={link.id}>
+						<Link  className={styles.a} to={link.href} spy={true} smooth={true} duration={700} offset={-50}>{link.name}</Link>
 					</li>
 				)}
 			</ul>

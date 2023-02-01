@@ -32,7 +32,7 @@ const MobailMenu = ({ links, active, setActive }: Props): JSX.Element => {
   }, [active]);
 
 	return (
-		<div className={active ? `${styles.mobailMenu} ${styles.active}` : styles.mobailMenu}
+		<div className={active ? `${styles.mobileMenu} ${styles.active}` : styles.mobileMenu}
 		onClick={() => setActive(false)}>
 				<div className={styles.blur}/>
 			<div className={styles.menu} onClick={e => e.stopPropagation()}>
@@ -42,7 +42,7 @@ const MobailMenu = ({ links, active, setActive }: Props): JSX.Element => {
 				<ul className={styles.ul}>
 					{links.map(link =>
 						<li className={styles.li} key={link.id}>
-							<Link className={styles.a} to={link.href} spy={true} smooth={true} duration={700} offset={-50}>{link.name}</Link>
+							<Link onClick={() => setActive(!active)} className={styles.a} to={link.href} spy={true} smooth={true} duration={700} offset={-100}>{link.name}</Link>
 						</li>
 					)}
 				</ul>

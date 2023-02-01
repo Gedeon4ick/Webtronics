@@ -1,18 +1,7 @@
 .card {
     position: relative;
     margin-top: 186px;
-    // &:nth-child(1n) {
-    //     position: relative;
-    //     &::before {
-    //         content: "";
-    //         position: absolute;
-    //         top: 55%;
-    //         right: -60%;
-    //         background-image: url('../../img//leftVector.svg');
-    //         width: 198px;
-    //         height: 156px;
-    //     }
-    // }
+ 
     &:nth-child(2) {
         margin-top: 130px;
         position: relative;
@@ -70,4 +59,30 @@
         
     }
     
+}
+
+@media (max-width: 1050px) {
+    .card {
+        position: relative;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        &:nth-child(2) {
+        margin-top: 20px;
+            &::before {
+                display: none;
+            }
+        }
+        &:nth-child(3) {
+            &::before {
+                display: none;
+            }
+        }
+        &:nth-child(1) {
+            &::before {
+                display: none;
+            }
+        }
+        
+    }
 }

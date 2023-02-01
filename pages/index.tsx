@@ -28,11 +28,11 @@ export default function Home({ home }: InferGetStaticPropsType<typeof getStaticP
 				<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
 			</Head>
 			<header className={styles.header}>
-					<nav>
-						<MobailMenu active={menuActive} setActive={setMenuActive} links={menu} />
-						<Menu links={menu} setActive={setMenuActive} active={menuActive}/>
-					</nav>
-					<Hero />
+				<nav>
+					<MobailMenu active={menuActive} setActive={setMenuActive} links={menu} />
+					<Menu links={menu} setActive={setMenuActive} active={menuActive}/>
+				</nav>
+				<Hero />
 			</header>
 			<div className="container">
 				<About mentors={mentors} />
@@ -43,13 +43,13 @@ export default function Home({ home }: InferGetStaticPropsType<typeof getStaticP
 				<Gallery />
 				<Contact /> */}
 			</div>
-			<footer className={styles.footer}>
+			{/* <footer className={styles.footer}>
 				<div className={styles.content}>
 					<div className="container">
 						<Footer links={menu} />
 					</div>
 				</div>
-			</footer>
+			</footer> */}
 		</>
 	)
 }
