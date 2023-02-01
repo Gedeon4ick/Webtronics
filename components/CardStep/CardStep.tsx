@@ -2,7 +2,7 @@ import styles from '../CardStep/CardStep.module.scss'
 import { Step } from '../Steps'
 
 interface Props {
-	gridConfig: Record<string, string>,
+	gridConfig: Record<string, string> | any,
 	step: Step
 }
 

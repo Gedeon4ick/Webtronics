@@ -11,7 +11,7 @@ import Star from '../Star/Star'
 const Techno = () => {
 	return (
 		<div id="Programs" className={styles.techno}>
-			<TitleH2 title="Programming technologies" />
+			<TitleH2 fontSize={styles.adaptive} title="Programming technologies" />
 			<div className={styles.subtitle}>
 				By the end, you’ll have the portfolio and interview skills you need to start your new career.
 			</div>
@@ -21,8 +21,8 @@ const Techno = () => {
 				<CardTechno img={vue} name="Vue.js" />
 				<CardTechno img={js} name="JavaScript" />
 			</div>
-			<Gradient top={-20} right={-20} />
-			<Gradient top={60} right={75} background="#2A3E84" />
+			<Gradient />
+			<Gradient />
 			<Star top={0} right={0} width={40} />
 			<Star top={-20} right={20} />
 			<Star top={-35} right={30} />

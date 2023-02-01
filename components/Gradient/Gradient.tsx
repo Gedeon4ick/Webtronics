@@ -1,7 +1,7 @@
 import styles from './Gradient.module.scss'
 
 interface Props {
-	position: string
+	position?: string
 }
 
 const Gradient = ({ position }: Props): JSX.Element => {

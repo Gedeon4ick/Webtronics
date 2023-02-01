@@ -22,14 +22,14 @@ const MobailMenu = ({ links, active, setActive }: Props): JSX.Element => {
 
 	useEffect(() => {
 		if(active) {
-			document.body.style.overflow = 'hidden';
+			document.body.style.overflow = 'hidden'
 		} else {
-			document.body.style.overflow = 'auto';
+			document.body.style.overflow = 'auto'
 		}
 		return () => {
-			document.body.style.overflow = 'auto';
-		};
-  }, [active]);
+			document.body.style.overflow = 'auto'
+		}
+  }, [active])
 
 	return (
 		<div className={active ? `${styles.mobileMenu} ${styles.active}` : styles.mobileMenu}

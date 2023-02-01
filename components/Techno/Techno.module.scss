@@ -13,13 +13,22 @@
     }
     .cards {
         display: flex;
+        flex-wrap: wrap;
         margin-top: 54px;
         justify-content: center;
         align-items: center;
         gap: 24px;
         
     }
-    
-    
+}
+
+.adaptive {
+    font-size: 72px;
+}
+
+@media (max-width: 500px) {
+    .adaptive {
+        font-size: 46px;
+    }
 }
 
