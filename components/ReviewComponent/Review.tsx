@@ -1,8 +1,9 @@
 import styles from './Review.module.scss'
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import TitleH2 from '../TitleH2/TitleH2'
 import Gradient from '../Gradient/Gradient'
 import Star from '../Star/Star'
+import React from "react";
 
 const items = [
 	{ title: "Simple and easy", description: "I am really enjoying the experience of learning a new skill I used to believe that web design was way too complicated for me to learn but so far in this course I have been keeping up and having fun." },
@@ -13,6 +14,15 @@ const items = [
 function Review(): JSX.Element {
 	const width = 205
 	const activeWidth = { width: "392px" }
+	const activeMobileWidth = { width: "340px"}
+
+	const [mobile, setMobile] = useState(false)
+	const cont = useRef()
+	useEffect(() => {
+		if (cont.current) {
+			if (cont.current.clientWidth <= 768) setMobile(true)
+		}
+	}, [cont])
 
 	const [number, setNumber] = useState(1);
 	const [offset, setOffset] = useState(-834);
@@ -76,7 +86,7 @@ function Review(): JSX.Element {
 	}
 
 	return (
-		<div className={styles.review}>
+		<div ref={cont} className={styles.review}>
 			<TitleH2 title="Review" />
 
 			<div className={styles.wrapper}>
@@ -111,64 +121,64 @@ function Review(): JSX.Element {
 							}}>
 							<div className={styles.card}>
 								<div className={styles.manImageContent}
-									style={number === 1 ? activeWidth : {}}>
+									style={number === 1 ? mobile ? activeMobileWidth  : activeWidth : {} }>
 								</div>
 							</div>
 
 							<div className={styles.card}>
 								<div className={styles.woomanImageContent}
-									style={number === 2 ? activeWidth : {}}
+									style={number === 2 ? mobile ? activeMobileWidth  : activeWidth : {} }
 								></div>
 							</div>
 
 							<div className={styles.card}>
 								<div className={styles.teenagerImageContent}
-									style={number === 3 ? activeWidth : {}}
+									style={number === 3 ? mobile ? activeMobileWidth  : activeWidth : {} }
 								></div>
 							</div>
 							{/* __________________________________ */}
 							<div className={styles.card}>
 								<div className={styles.manImageContent}
-									style={number === 1 ? activeWidth : {}}>
+									style={number === 1 ? mobile ? activeWidth : activeMobileWidth : {}}>
 								</div>
 							</div>
 
 							<div className={styles.card}>
 								<div className={styles.woomanImageContent}
-									style={number === 2 ? activeWidth : {}}
+									style={number === 2 ? mobile ? activeWidth : activeMobileWidth : {}}
 								></div>
 							</div>
 
 							<div className={styles.card}>
 								<div className={styles.teenagerImageContent}
-									style={number === 3 ? activeWidth : {}}
+									style={number === 3 ? mobile ? activeWidth : activeMobileWidth : {}}
 								></div>
 							</div>
 							{/* _____________________________________ */}
 							<div className={styles.card}>
 								<div className={styles.manImageContent}
-									style={number === 1 ? activeWidth : {}}>
+									style={number === 1 ? mobile ? activeWidth : activeMobileWidth : {}}>
 								</div>
 							</div>
 
 							<div className={styles.card}>
 								<div className={styles.woomanImageContent}
-									style={number === 2 ? activeWidth : {}}
+									style={number === 2 ? mobile ? activeWidth : activeMobileWidth : {}}
 								></div>
 							</div>
 
 							<div className={styles.card}>
 								<div className={styles.teenagerImageContent}
-									style={number === 3 ? activeWidth : {}}
+									style={number === 3 ? mobile ? activeWidth : activeMobileWidth : {}}
 								></div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<Gradient top={30} right={-10} index={-1} />
-			<Gradient top={-10} right={70} />
-			<Star top={40} right={-5} width={30} />
+			<Gradient />
+			<Gradient />
+			<Star top={80} right={5} width={30} />
 		</div>
 	)
 }
