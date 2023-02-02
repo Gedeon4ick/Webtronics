@@ -14,18 +14,22 @@ const items = [
 function Review(): JSX.Element {
 	const width = 205
 	const activeWidth = { width: "392px" }
-	const activeMobileWidth = { width: "340px"}
+	const activeMobileWidth = { width: "320px"}
 
 	const [mobile, setMobile] = useState(false)
 	const cont = useRef()
 	useEffect(() => {
 		if (cont.current) {
-			if (cont.current.clientWidth <= 768) setMobile(true)
+			if (cont.current.clientWidth <= 768) {
+				setMobile(true)
+				setOffset(-760)
+			}
 		}
 	}, [cont])
+	
 
 	const [number, setNumber] = useState(1);
-	const [offset, setOffset] = useState(-834);
+	const [offset, setOffset] = useState(-825);
 	const transit = useRef<HTMLDivElement | null>(null)
 	const [currentItem, setCurrentItem] = useState(items[0])
 	const [currentIndex, setCurrentIndex] = useState(1)
@@ -121,7 +125,7 @@ function Review(): JSX.Element {
 							}}>
 							<div className={styles.card}>
 								<div className={styles.manImageContent}
-									style={number === 1 ? mobile ? activeMobileWidth  : activeWidth : {} }>
+									style={number === 1 ? mobile ? activeMobileWidth : activeWidth : {} }>
 								</div>
 							</div>
 
@@ -139,37 +143,37 @@ function Review(): JSX.Element {
 							{/* __________________________________ */}
 							<div className={styles.card}>
 								<div className={styles.manImageContent}
-									style={number === 1 ? mobile ? activeWidth : activeMobileWidth : {}}>
+									style={number === 1 ? mobile ? activeMobileWidth  : activeWidth : {} }>
 								</div>
 							</div>
 
 							<div className={styles.card}>
 								<div className={styles.woomanImageContent}
-									style={number === 2 ? mobile ? activeWidth : activeMobileWidth : {}}
+									style={number === 2 ? mobile ? activeMobileWidth  : activeWidth : {} }
 								></div>
 							</div>
 
 							<div className={styles.card}>
 								<div className={styles.teenagerImageContent}
-									style={number === 3 ? mobile ? activeWidth : activeMobileWidth : {}}
+									style={number === 3 ? mobile ? activeMobileWidth  : activeWidth : {} }
 								></div>
 							</div>
 							{/* _____________________________________ */}
 							<div className={styles.card}>
 								<div className={styles.manImageContent}
-									style={number === 1 ? mobile ? activeWidth : activeMobileWidth : {}}>
+									style={number === 1 ? mobile ? activeMobileWidth  : activeWidth : {} }>
 								</div>
 							</div>
 
 							<div className={styles.card}>
 								<div className={styles.woomanImageContent}
-									style={number === 2 ? mobile ? activeWidth : activeMobileWidth : {}}
+									style={number === 2 ? mobile ? activeMobileWidth  : activeWidth : {} }
 								></div>
 							</div>
 
 							<div className={styles.card}>
 								<div className={styles.teenagerImageContent}
-									style={number === 3 ? mobile ? activeWidth : activeMobileWidth : {}}
+									style={number === 3 ? mobile ? activeMobileWidth  : activeWidth : {} }
 								></div>
 							</div>
 						</div>
