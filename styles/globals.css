@@ -16,14 +16,11 @@ a {
   margin: 0 auto;
 }
 
-
 header {
   padding: 40px 40px ;
 }
 
-
-
 html {
   background-color: #0C102D;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }

@@ -39,19 +39,19 @@ export default function Home({ home }: InferGetStaticPropsType<typeof getStaticP
 			<div className="container">
 				<About mentors={mentors} />
 				<Techno />
-				{/* <Steps steps={steps} /> */}
+				<Steps steps={steps} />
 				<Asked questions={questions} />
 				<Review />
 				<Gallery />
 				<Contact />
 			</div>
-			{/* <footer className={styles.footer}>
+			<footer className={styles.footer}>
 				<div className={styles.content}>
 					<div className="container">
 						<Footer links={menu} />
 					</div>
 				</div>
-			</footer> */}
+			</footer>
 		</>
 	)
 }

@@ -1,6 +1,7 @@
 .footer {
     display: flex;
     gap: 185px;
+    flex-wrap: wrap;
     .logo {
         max-width: 200px;
         img {
@@ -51,4 +52,10 @@
         }
     }
     
+}
+
+@media (max-width: 1060px) {
+    .footer  {
+        gap: 30px;
+    }
 }

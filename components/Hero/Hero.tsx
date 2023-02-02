@@ -1,6 +1,6 @@
 import styles from './Hero.module.scss'
-import Button from '../Button/Button'
 import Gradient from '../Gradient/Gradient'
+import { Link } from 'react-scroll/modules'
 
 const Hero = () => {
 	return (
@@ -15,7 +15,7 @@ const Hero = () => {
 					</div>
 				</div>
 				<div className={styles.element}>
-					<Button text={"Start my career change"} />
+					<button className={styles.btn}><Link className={styles.link} to="Get-in-touch" spy={true} smooth={true} duration={700} offset={-50}>Start my career change</Link>	</button>
 				</div>
 				<div className={styles.element}>
 					<h1>Developer</h1>

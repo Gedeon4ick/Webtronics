@@ -32,7 +32,7 @@ const Gallery = () => {
 					<Image src={dev4} alt="developer"></Image>
 				</div>
 			</div>
-			<Gradient top={50} right={80} index={-1} />
+			<Gradient index={-1} />
 		</div>
 	)
 }

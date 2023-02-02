@@ -76,7 +76,7 @@ const Contact = (): JSX.Element => {
 					</div>
 				</form>
 			</div>
-			<Gradient />
+			<Gradient index={-1}/>
 			<Star top={-65} right={30} width={30} />
 			<Star top={-35} right={45} />
 			<Star top={-15} right={75} />
