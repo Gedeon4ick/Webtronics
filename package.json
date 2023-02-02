@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "json-server --watch db.json -p 3004 & next start",
     "lint": "next lint",
     "server": "json-server --watch db.json -p 3004"
   },
