@@ -7,7 +7,11 @@
         border-radius: 20px;
         padding: 56px 0;
         background: #151936;
+        .form {
+            padding: 0 10px;
+        }
         .subtitle {
+            padding: 0 10px;
             margin-top: 16px;
             margin-bottom: 24px;
             font-weight: 400;
@@ -16,7 +20,21 @@
             text-align: center;
             color: #FFFFFF;
         }
+        .button {
+            max-width: 500px;
+            margin: auto;
+        }
       
     }
 
+}
+
+.adaptive {
+    font-size: 72px;
+}
+
+@media (max-width: 470px) {
+    .adaptive {
+        font-size: 50px;
+    }
 }

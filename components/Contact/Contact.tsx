@@ -48,11 +48,11 @@ const Contact = (): JSX.Element => {
 	return (
 		<div id="Get-in-touch" className={styles.contact}>
 			<div className={styles.content}>
-				<TitleH2 title="Contact us" />
+				<TitleH2 fontSize={styles.adaptive} title="Contact us" />
 				<div className={styles.subtitle}>
 					Do you have any kind of help please contact with us.
 				</div>
-				<form className="form" onSubmit={handleSubmit(onSubmit)}>
+				<form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
 					<Input
 						textError={errors.name?.message}
 						register={register}
@@ -71,10 +71,12 @@ const Contact = (): JSX.Element => {
 						name="email"
 						placeholder="E-mail"
 					/>
-					<Button text="Send" />
+					<div className={styles.button}>
+						<Button text="Send" />
+					</div>
 				</form>
 			</div>
-			<Gradient top={-20} right={-20} background="#2A3E84" />
+			<Gradient />
 			<Star top={-65} right={30} width={30} />
 			<Star top={-35} right={45} />
 			<Star top={-15} right={75} />

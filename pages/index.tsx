@@ -42,8 +42,8 @@ export default function Home({ home }: InferGetStaticPropsType<typeof getStaticP
 				{/* <Steps steps={steps} /> */}
 				<Asked questions={questions} />
 				<Review />
-				{/* <Gallery />
-				<Contact /> */}
+				<Gallery />
+				<Contact />
 			</div>
 			{/* <footer className={styles.footer}>
 				<div className={styles.content}>
