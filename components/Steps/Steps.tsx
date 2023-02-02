@@ -17,7 +17,7 @@ interface Props {
 
 const Steps = ({ steps }: Props): JSX.Element => {
 	const [mobile, setMobile] = useState(false)
-	const cont = useRef()
+	const cont = useRef<HTMLDivElement>(null)
 	useEffect(() => {
 		if (cont.current) {
 			if (cont.current.clientWidth >= 630) setMobile(true)

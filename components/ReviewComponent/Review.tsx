@@ -17,7 +17,7 @@ function Review(): JSX.Element {
 	const activeMobileWidth = { width: "320px"}
 
 	const [mobile, setMobile] = useState(false)
-	const cont = useRef()
+	const cont = useRef<HTMLDivElement>(null)
 	useEffect(() => {
 		if (cont.current) {
 			if (cont.current.clientWidth <= 768) {
