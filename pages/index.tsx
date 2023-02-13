@@ -13,9 +13,10 @@ import Gallery from '../components/Gallery/Gallery'
 import Contact from '../components/Contact/Contact'
 import Footer from '../components/Footer/Footer'
 import MobailMenu from "../components/MobailMenu/MobilelMenu"
+import config from '../static/config.json'
 
-export default function Home({ home }: InferGetStaticPropsType<typeof getStaticProps>) {
-	const { menu, mentors, steps, questions } = home
+export default function Home() {
+	const { menu, mentors, steps, questions } = config.homePage
 	const [menuActive, setMenuActive] = useState(false)
 
 	return (
@@ -54,11 +55,11 @@ export default function Home({ home }: InferGetStaticPropsType<typeof getStaticP
 	)
 }
 
-export const getStaticProps: GetStaticProps = async () => {
-	const response = await fetch(`http://localhost:3004/homePage`)
-	const home = await response.json()
+// export const getStaticProps: GetStaticProps = async () => {
+// 	const response = await fetch(`http://localhost:3004/homePage`)
+// 	const home = await response.json()
 
-	return {
-		props: { home }
-	}
-}
+// 	return {
+// 		props: { home }
+// 	}
+// }

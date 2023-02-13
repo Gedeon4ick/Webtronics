@@ -8,7 +8,7 @@ interface Mentor {
 	name: string,
 	description: string,
 	img: string,
-	center: boolean
+	center?: boolean
 }
 
 interface Props {

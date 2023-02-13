@@ -7,7 +7,7 @@ interface Props {
 		name: string,
 		description: string,
 		img: string,
-		center: boolean
+		center?: boolean
 	},
 	img: string
 }

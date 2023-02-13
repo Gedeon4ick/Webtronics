@@ -1,0 +1,110 @@
+{
+  "homePage": {
+    "menu": [
+      {
+        "id": 1,
+        "name": "About",
+        "href": "About"
+      },
+      {
+        "id": 2,
+        "name": "Programs",
+        "href": "Programs"
+      },
+      {
+        "id": 3,
+        "name": "Steps",
+        "href": "Steps"
+      },
+      {
+        "id": 4,
+        "name": "Questions",
+        "href": "Questions"
+      },
+      {
+        "id": 5,
+        "name": "Get in touch",
+        "href": "Get-in-touch"
+      }
+    ],
+    "mentors": [
+      {
+        "id": 1,
+        "name": "Wade Warren",
+        "description": "Front-end engineers work closely with designers",
+        "img": "wade.svg"
+      },
+      {
+        "id": 2,
+        "name": "Kristin Watson",
+        "description": "Front-end engineers work closely with designers",
+        "img": "kris.svg"
+      },
+      {
+        "id": 3,
+        "name": "Robert Fox",
+        "description": "Front-end engineers work closely with designers",
+        "img": "robert.svg"
+      }
+    ],
+    "steps": [
+      {
+        "id": 1,
+        "title": "Introduction to Front-End",
+        "description": "Lorem ipsum dolor sit amet consectetur. Elit massa erat vitae non semper quis. "
+      },
+      {
+        "id": 2,
+        "title": "Overview of Development",
+        "description": "Lorem ipsum dolor sit amet consectetur. Elit massa erat vitae non semper quis. "
+      },
+      {
+        "id": 3,
+        "title": "Introduction to Front-End",
+        "description": "Lorem ipsum dolor sit amet consectetur. Elit massa erat vitae non semper quis. "
+      },
+      {
+        "id": 4,
+        "title": "Overview of Development",
+        "description": "Lorem ipsum dolor sit amet consectetur. Elit massa erat vitae non semper quis. "
+      },
+      {
+        "id": 5,
+        "title": "Introduction to Front-End",
+        "description": "Lorem ipsum dolor sit amet consectetur. Elit massa erat vitae non semper quis. "
+      },
+      {
+        "id": 6,
+        "title": "Overview of Development",
+        "description": "Lorem ipsum dolor sit amet consectetur. Elit massa erat vitae non semper quis. "
+      }
+    ],
+    "questions": [
+      {
+        "id": 1,
+        "title": "What is the price?",
+        "description": "Front-end engineers work closely with designers to make websites beautiful, functional, and fast. This Career Path will teach you not only the necessary languages and technologies, but how to think like a front-end engineer, too."
+      },
+      {
+        "id": 2,
+        "title": "What is the price?",
+        "description": "Front-end engineers work closely with designers to make websites beautiful, functional, and fast. This Career Path will teach you not only the necessary languages and technologies, but how to think like a front-end engineer, too."
+      },
+      {
+        "id": 3,
+        "title": "What is the price?",
+        "description": "Front-end engineers work closely with designers to make websites beautiful, functional, and fast. This Career Path will teach you not only the necessary languages and technologies, but how to think like a front-end engineer, too."
+      },
+      {
+        "id": 4,
+        "title": "What is the price?",
+        "description": "Front-end engineers work closely with designers to make websites beautiful, functional, and fast. This Career Path will teach you not only the necessary languages and technologies, but how to think like a front-end engineer, too."
+      },
+      {
+        "id": 5,
+        "title": "What is the price?",
+        "description": "Front-end engineers work closely with designers to make websites beautiful, functional, and fast. This Career Path will teach you not only the necessary languages and technologies, but how to think like a front-end engineer, too."
+      }
+    ]
+  }
+}
